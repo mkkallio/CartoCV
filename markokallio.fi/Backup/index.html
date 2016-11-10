@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+    <title>CV / Marko Kallio</title>
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+	<link rel="stylesheet" href="MarkerCluster.css" />
+	<link rel="stylesheet" href="MarkerCluster.Default.css" />
+	<!-- <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' /> -->
+    <link rel="stylesheet" href="leaflet-sidebar.css" />
+	<link rel="stylesheet" href="stylesheet.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="leaflet.awesome-markers.css">
+	<!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+	
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="jquery-sidebar.js"></script>
+	<script src="leaflet.markercluster-src.js"></script>
+	<!-- <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script> -->
+	<script src="leaflet-sidebar.js"></script>
+	<script src="data.js"></script>
+	<script src="leaflet.awesome-markers.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	
+</head>
+<body>
+<div id="sidebar" class="sidebar collapsed">
+	<!-- Nav tabs -->
+	<ul class="sidebar-tabs" role="tablist">
+		<li><a href="#Cover" role="tab"><i class="fa fa-question"></i></a></li>
+		<li><a href="#Basic_Info" role="tab"><i class="fa fa-user"></i></a></li>
+		<li><a href="#Work_Experience" role="tab"><i class="fa fa-cogs"></i></a></li>
+		<li><a href="#Projects" role="tab"><i class="fa fa-check-square-o"></i></a></li>
+		<li><a href="#Education" role="tab"><i class="fa fa-graduation-cap"></i></a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="sidebar-content active">
+		<div class="sidebar-pane" id="Cover">
+			<h1>Mapping out my CV</h1>
+
+                <p>Welcome to view my CV mapped out! The panel you are reading shows information like an ordinary CV would. The only difference is 
+				the division to tabs; <b>personal information</b> followed by <b>work experience</b>, <b>projects I've been involved in</b> and the final tab shows my
+				<b>educational history</b>. This panel can be closed by clicking on the tab on the menu. </p>
+				
+				<p>Clicking out an item in the map will give you more detailed information. The list on the right side of the page is linked to the
+				corresponding location in the map.</p>
+				
+				<p><b>My professional interests</b><br><br>
+				I am an environmental engineer (B.Eng) currently finishing my studies in Geoinformatics in Aalto University and seeking a PhD position. My professional interests are<br>
+				▪	water resources management,<br>
+				▪	environmental protection,<br>
+				▪	sustainability,<br>
+				▪	GIS and cartography, <br>
+				▪	Open Data and Open Science, and<br>
+				▪	information visualization (especially environmental information).<br>
+				
+				
+				<p>Thanks for taking the time to explore my professional history. I hope you like what you find. <br>If you have any suggestions, comments or proposals, feel free to take contact!.</p>
+			
+							
+		</div>
+		<div class="sidebar-pane" id="Basic_Info"><h1>Personal Information</h1>
+			<img src='pic_for_ggrs.jpg' alt= 'Marko Kallio' height="150px" width="150px"><br>
+			<p><b>Marko Kallio</b><br>
+				Date of Birth: 1984<br><br>
+				Address: Helsinki, Finland<br>
+				Email: marko.k.kallio@aalto.fi or marko@markokallio.fi (preferred)<br><br>
+				GitHub: <a href='https://github.com/mkkallio'>@mkkallio</a><br>
+				OpenStreetMap: <a href='http://www.openstreetmap.org/user/MarkoKallio'>MarkoKallio</a><br>
+				LinkedIn: <a href='https://www.linkedin.com/profile/view?id=76541037'>Marko Kallio</a></p>
+				
+				<p><b>Language skills:</b><br>
+				▪	Finnish - Native<br>
+				▪	English - Excellent<br>
+				▪	Swedish - Basic<br>
+				▪	German - Basic<br>
+				▪	Italian - Basic<br></p>
+				
+				<p><b>Noteworthy skills:</b><br>
+				▪	Excellent professional and non-professional communication skills gained through challenging work with disabled people for 9 years 
+				and friends from wide range of cultures<br>
+				▪	Deep Knowledge of MATLAB, R, ArcGIS, QGIS, Adobe Illustrator<br>
+				▪	Basics of programming and web development: Python, JavaScript(Leaflet, OpenLayers), HTML5, CSS3<br></p>
+				
+				<p><b>Interests:</b><br>
+				▪	Cycling - Building bikes and randonneuring (long distance cycling)<br>
+				▪	Urban planning and transportation systems<br>
+				▪	Sustainability<br>
+				▪	Environment<br>
+				▪	Water<br>
+				▪	Cartography and mapping<br>
+				▪	Open (geospatial) Data</p>
+			
+				<p><b>Honours:</b><br>
+				▪	Vantaan Energia Award for success in studies<br>
+				▪	Membership of the SkyClub<br>
+	
+		
+		
+		</div>
+		
+		<div class="sidebar-pane" id="Work_Experience"><h1>Work Experience</h1>
+		
+			<p><b><font color=#1087bf>Trainee | June 2016 - Current<br>
+				Finnish Transport Agency; Department of Nautical Charting</b></font><br>
+				▪	Data quality checks, handling and migration
+				▪	Production of Electronic Navigational Charts
+				▪	Testing a possible replacement (CARIS HPD) for a nautical charting system</p>
+				
+				<p><b><font color=#1087bf>Modelling Expert | May 2015 - May 2016<br>
+				Ministry of Natural Resources and Environment; Department of Water Resources</b></font><br>
+				▪	Hydrological and water quality modelling<br>
+				▪	Includes periods of working in Vientiane, Laos as well as off-site work<br>
+				▪	Capacity building and training of the Department staff on modelling<br>
+				▪	Funding provided by the DWR and Mekong Region Futures Institute
+				▪	I continue giving support on modelling.</p>
+				
+				<p><b><font color=#1087bf>Lecturer | Sep 2015 - Nov 2015 & Oct 2016 - Dec 2016<br>
+				Metropolia University of Applied Sciences</b></font><br>
+				▪	I taught a short 1,5 credit course on:<br>
+					▪	Basic GIS theory<br>
+					▪	Short introduction to cartography<br>
+					▪	Basic ArcGIS and QGIS</p>
+								
+				
+				<p><b><font color=#1087bf>Research Project | July 2013 - March 2014<br>
+				Challenge Program on Food and Water</b></font><br>
+				▪	GIS based modelling of sediments and nutrients in Nam Ngum watershed, Lao PDR<br>
+				▪	Literature study of reservoirs and impacts of mining and dams on water quality<br>
+				▪	Project funded by Challenge Program on Food and Water<br>
+				▪	Project supervised by Juha Sarkkula</p>
+
+					
+				<p><b><font color=#1087bf>Night watch in vocational college for the disabled | Nov 2005 - (currently on a study leave as of Nov 2014)<br>	
+					Keskuspuiston Ammattiopisto / Invalidisäätiö, Helsinki </b></font><br>
+				▪	Providing assistance at the dormitory when required<br>
+				▪	Taking care of resident’s security<br>
+				▪	Hotel receptionist during school’s summer holidays<br>
+				▪	3 months working as teacher’s assistant in the class room<br>
+				▪	3 shift job from Nov 2005 to Dec 2007<br>
+				▪	Full time night job since Jan 2008<br></p>
+				
+
+				<p><b><font color=#1087bf>Salesperson at sports department | Feb 2005 – Sep 2005<br>
+					Anttila Myyrmanni Oy, Vantaa </b></font><br>
+				▪	Sales & customer service<br>
+				▪	Taking care of sports department’s warehouse area<br>
+				▪	Working as cashier<br></p>
+					
+
+				<p><b><font color=#1087bf>Various jobs | 1999 - 2004</b></font><br>
+					Various employers<br>
+				▪	5 summers as a summer extra taking care of yards and doing minor repairs in apartment buildings  |  Malminkartanon Kiinteistöt Oy<br>
+				▪	A summer  creating product information html-pages for internal use  |  Sonera Oyj<br>
+				▪	Customer service in various fairs  |  BBM Oy<br>
+				▪	Business to business sales, general office assistant  |  Business Information Services Oy<br></p>
+				</div>
+
+			
+			
+			
+			
+			
+		<div class="sidebar-pane" id="Education"><h1>Education</h1>
+		
+			<p><b><font color=#9c89cc>Geoinformatics, MSc. in Engineering | 2014 - 2016 (projected)<br>
+				Aalto University</b></font><br>
+				▪	GIS techniques and theory<br>
+				▪	Information visualization<br>
+				▪	Watershed engineering and related computational methods and governance<br>
+				▪	Cartography<br>
+				▪	Computing relating to GIS and cartography<br>
+				▪	Thesis title: An Exploration of Water Poverty in Lao People’s Democratic Republic.<br>
+				</p>
+				
+				
+				<p><b><font color=#9c89cc>Environmental Engineering, BEng. | 2009-2014<br>
+				Metropolia University of Applied Sciences </b></font><br>
+				▪	Environmental and atmospheric pollution<br>
+				▪	Environmental chemistry<br>
+				▪	Water and  waste treatment<br>
+				▪	Renewable energy (incl. biofuels)<br>
+				▪	Power plant operation and cycles<br>
+				▪	One year of exchange studies at HZ University of Applied Sciences
+				▪	Thesis on the Effects of Mining and Hydropower on Metals in Surface Waters. Case: Nam Ngum.</p>
+				
+				
+				<p><b><font color=#9c89cc>International Water Management (Erasmus) | 2011-2012<br>
+				HZ University of Applied Sciences, Vlissingen, Netherlands</b></font><br>
+				▪	(Aquatic) Ecology<br>
+				▪	Dredging<br>
+				▪	Water system analysis<br>
+				▪	River basin management<br>
+				▪	IWRM<br>
+				▪	Aquaculture<br>
+				▪	Ecological engineering </p>
+				
+				
+				<p><b><font color=#9c89cc>Business and Administration	Vocational Degree | 2000-2005<br>
+					Helsinki Business College</b></font><br>
+				▪	Accounting<br>
+				▪	Administration<br>
+				▪	Customer service<br>
+				▪	Minor in sales and marketing</p>
+		
+
+		</div>
+		
+		<div class="sidebar-pane" id="Projects"><h1>Projects and Other Involvements</h1>
+		
+		<p><b><font color=#d27591>Thesis project / <a href='http://urn.fi/URN:NBN:fi:aalto-201608263118'>An Exploration of Water Poverty in Lao People's Democratic Republic</a> | 2015-2016</b></font><br>
+				▪	Research on the spatial and seasonal distribution and the causes of water poverty in Lao PDR<br>
+				▪	Methodology: Water Poverty index, Exploratory Data Analysis and Spatial Data Mining<br>
+				▪	Grade: Excellent<br>
+				▪	Funded partially by MVTT ry</p>
+			
+			<p><b><font color=#d27591>Arctic Sounds / <a href='www.arcticsounds.fi'>www.arcticsounds.fi</a>| 2015-2016</b></font><br>
+				▪	A website that visualizes Teosto (Finnish Composer’s Copyright Society) Open Data on music events in Finland in 2014
+				▪	Provides simple analyses and search functions, and visualizes the results on a map. 
+				▪	Entered in Kartta2016-competition by the Finnish Cartographic Society</p>
+			
+			<p><b><font color=#d27591>SAIL for Teachers/ Baltic University Programme| 2016</b></font><br>
+				▪	One week conference on board the brig STS Fryderyk Chopin<br>
+				▪	Watch leader duty in the bow working along with multinational crew with various ages and backgrounds<br>
+				▪	Route of the sail was Stavanger (Norway) - Antwerp (Belgium)</p>
+			
+			<p><b><font color=#d27591>SAIL for Teachers/ Baltic University Programme| 2015</b></font><br>
+				▪	One week conference on board the brig STS Fryderyk Chopin<br>
+				▪	Watch leader duty in the bow working along with multinational crew with various ages and backgrounds<br>
+				▪	Route of the sail was Stavanger (Norway) - Lerwick (Shetland) - Belfast (N. Ireland)</p>
+			
+			
+			<p><b><font color=#d27591>GogoRideshare.com | 2013 - 2015</b></font><br>
+				GogoRideshare is a service under development which promotes ridesharing and hitchhiking by connecting drivers and passengers with the same destination.
+				My involvement in the project has been<br>
+				▪	Translation of the service from English to Finnish<br>
+				▪	Product testing and reporting<br>
+				▪	And development ideas and commenting<br><br>
+				<a href='http://www.gogorideshare.com/'>GGRS website</a></p>
+				
+				<p><b><font color=#d27591>SAIL - Sustainability in International Learning / Baltic University Programme | 2013</b></font><br>
+				▪	A 2-week intensive course on sustainability on board STS Fryderyk Chopin<br>
+				▪	The sailed course was Sczeczin - Helsingor - Stavanger - Maloy - Bergen<br>
+				▪	SAIL consisted on lectures and workshops as well as sailing duty around the clock<br>
+				▪	At the end of the course I was invited on Watch Leader training in the summers of 2014 and 2015</p>
+				
+				<p><b><font color=#d27591>Determining the ecological status of Eastern Scheldt, Volkerak and Steenbergse Vliet (a small stream) | 2012 </b></font><br>
+				▪	A 4-day measurement and sampling campaign<br>
+				▪	Sampling water, sediments and biology of three different water bodies<br>
+				▪	Analyses done according to the EU Water Framework Directive</p>
+				
+				<p><b><font color=#d27591>Water quality survey of River Scheldt | 2012</b></font><br>
+				▪	A 2-day Sampling campaign on River Scheldt from the Belgo-French border to the Western Scheldt<br>
+				▪	Sampling on more than 10 water quality stations<br>
+				▪	Final report handed over to the officers of The Netherland and Belgium</p>
+				
+				<p><b><font color=#d27591>Research on biological productivity of Rich Revetments (Building for Nature) | 2011</b></font><br>
+				▪	A semester-long research project on the biological productivity hard structure dykes enhanced with pools<br>
+				▪	4 common dyke construction materials investigated<br>
+				▪	Results indicate that enhancing revetments with pools increase productivity<br>
+				▪	Limestone increases productivity considerably more than other materials</p>
+				
+				<p><b><font color=#d27591> Determination of the state of River Guadalquivir | 2011</b></font><br>
+				▪	Week long Intensive course in Spain investigating Guadalquivir downstream from Sevilla<br>
+				▪	I worked on Stakeholder group contacting and interviewing them as well as analysing their points of view<br>
+				▪	Stakeholders met were aquaculture companies, agricultural organisations, port authority of Sevilla and local environmental officials<br>
+				▪	The results were presented in University of Cadíz to the university staff and environmental officials of the region</p>
+			
+		
+		</div>
+	</div>
+</div>
+	
+<div id="map" class="sidebar-map"></div>
+
+<ul id='marker-list'>
+Marko Kallio / CV<br>
+<img src='pic_for_ggrs.jpg' alt= 'Marko Kallio' height="100px" width="100px" align="middle"><br>
+
+<div class='my-legend'>
+	Contact:<br>
+	marko@markokallio.fi<br>
+	+358 50 577 0535<br><br>
+	Information of my experience can be found from the panel on the left or clicking on the items in the map. <br><br>
+	<div class='legend-title'>Map Legend</div>
+	<div class='legend-scale'>
+		<ul class='legend-labels'>
+			<li><span style='background:#00BFFF'></span>Work Experience</li>
+			<li><span style='background:#4B0082'></span>Education</li>
+			<li><span style='background:#8B0000'></span>Projects and Other</li>
+		</ul>
+	<br>
+	<button id="timeline">Timeline BETA</button>
+	<br>
+	<br>
+	<div class='legend-title'>Most Recent <br><font color='#00BFFF'>Experience</font></div>
+	<div class = 'expItem' id='expItem0'>IWRM Modelling / Nam Xong, Lao PDR</div>
+	<div class = 'expItem' id='expItem1'>Nightwatch at Keskuspuisto Vocational School</div>
+		
+	<div class='legend-title'><font color='#4B0082'>Education</font></div>
+	<div class = 'expItem' id='eduItem0'>Master's in Geoinformatics / Aalto University</div>
+	<div class = 'expItem' id='eduItem1'>Bachelor's in Environmental Engineering / Metropolia UAS</div>
+		
+	<div class='legend-title'><font color='#8B0000'>Projects</font></div>
+	<div class = 'expItem' id='proItem0'>SAIL for Teachers 2015</div>
+	<div class = 'expItem' id='proItem1'>GogoRideShare/Klokan Translations</div>
+		
+</div>
+
+</ul>
+
+<script>
+
+	// FIRST ADD MAP AND FEATURES TO THE MAP
+	var map=new L.Map('map').setView([43.326139, 31.972922], 3);
+	L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
+		attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>.'
+	}).addTo(map);
+	var sidebar = L.control.sidebar('sidebar', {closeButton:true}).addTo(map);
+		sidebar.open('Cover');
+	
+	var markerCluster = new L.MarkerClusterGroup({
+				maxClusterRadius: 25
+			}).addTo(map);	
+		
+	var lineArea_style = function(feature) {
+			switch (feature.properties.class) {
+				case 'exp': return {color: "#00BFFF", fillOpacity: 0.2, weight: 4};
+				case 'edu':   return {color: "#4B0082", fillOpacity: 0.2, weight: 4};
+				case 'project':   return {color: "darkred", fillOpacity: 0.2, weight: 4};
+			}
+		};
+		
+	var lineAreaFeatures = L.geoJson(lineArea, {
+			style: lineArea_style,
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup("<b>" + feature.properties.title + "</b><br>" + feature.properties.description);
+			}
+		}).addTo(map);
+	
+	var expMarker = L.AwesomeMarkers.icon({
+		icon: 'cogs',
+		prefix: 'fa',
+		markerColor: 'blue'
+	});
+	var eduMarker = L.AwesomeMarkers.icon({
+		icon: 'graduation-cap',
+		prefix: 'fa',
+		markerColor: 'darkpurple'
+	});
+	var projectMarker = L.AwesomeMarkers.icon({
+		icon: 'check-square-o',
+		prefix: 'fa',
+		markerColor: 'darkred'
+	});
+
+		
+	var exp = L.geoJson(point, {
+		filter: function(feature, layer) {
+			return feature.properties.class == "exp";
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: expMarker
+			})
+		},
+		onEachFeature: function (feature, layer) {
+			layer.bindPopup("<b>" + feature.properties.title + "</b><br>" + feature.properties.description);
+		}
+	});	
+	
+	var edu = L.geoJson(point, {
+		filter: function(feature, layer) {
+			return feature.properties.class == "edu";
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: eduMarker
+			})
+		},
+		onEachFeature: function (feature, layer) {
+			layer.bindPopup("<b>" + feature.properties.title + "</b><br>" + feature.properties.description);
+		}
+	});	
+	
+	var project = L.geoJson(point, {
+		filter: function(feature, layer) {
+			return feature.properties.class == "project";
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: projectMarker
+			})
+		},
+		onEachFeature: function (feature, layer) {
+			layer.bindPopup("<b>" + feature.properties.title + "</b><br>" + feature.properties.description);
+		}
+	});	
+	
+	exp.addTo(markerCluster);
+	edu.addTo(markerCluster);
+	project.addTo(markerCluster);
+	
+	
+	//
+	//FUNCTIONS
+	//
+	
+	$timeline = $('#timeline');
+	var currentControl = "none";
+	
+	$timeline.on('click', function() {
+		if (currentControl !== "none") {
+			map.removeControl(currentControl);
+		}
+		sidebar.close();
+		timelineBar.addTo(map);
+		timelineBar.update();
+		currentControl = timelineBar;
+	});
+	
+	var timelineBar = L.control({position: 'bottomleft'});
+
+	timelineBar.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'controls');
+		this._div.innerHTML = '<div id="timeDiv">';
+		return this._div;
+		timelineBar.update();
+	}; 
+
+	timelineBar.update = function () {
+		timelineBar._div.innerHTML = '<div id="timeDiv" align="center"></div><div align="center"><br><button id="close">Close</button>';
+		$close = $('#close');
+		$close.on('click', function() {
+			map.removeControl(timelineBar);
+			currentControl = "none";
+		});
+		
+		var expStart = [];
+		var eduStart = [];
+		var projectStart = [];
+		var expEnd = [];
+		var eduEnd = [];
+		var projectEnd = [];
+		var expJob = [];
+		var eduJob = [];
+		var projectJob = [];
+		
+	
+		var currentDate = new Date()
+		var day = currentDate.getDate()
+		var month = currentDate.getMonth() + 1
+		var year = currentDate.getFullYear()
+								
+		for (i=0;i<expPoint.features.length; i++) {
+
+			expStart.push(expPoint.features[i].properties.startdate);
+			if (expPoint.features[i].properties.enddate === "") {
+				expEnd.push(year+'-'+month+'-'+day);
+				console.log(year+'-'+month+'-'+day);
+			} else {
+				expEnd.push(expPoint.features[i].properties.enddate);
+			}
+			expJob.push(expPoint.features[i].properties.shortTitle);
+		}
+		
+		for (i=0;i<eduPoint.features.length; i++) {
+
+			eduStart.push(eduPoint.features[i].properties.startdate);
+			if (eduPoint.features[i].properties.enddate === "") {
+				eduEnd.push(year+'-'+month+'-'+day);
+				console.log(year+'-'+month+'-'+day);
+			} else {
+				eduEnd.push(eduPoint.features[i].properties.enddate);
+			}
+			eduJob.push(eduPoint.features[i].properties.shortTitle);
+		}
+		
+		for (i=0;i<projectPoint.features.length; i++) {
+
+			projectStart.push(projectPoint.features[i].properties.startdate);
+			if (projectPoint.features[i].properties.enddate === "") {
+				projectEnd.push(year+'-'+month+'-'+day);
+				console.log(year+'-'+month+'-'+day);
+			} else {
+				projectEnd.push(projectPoint.features[i].properties.enddate);
+			}
+			projectJob.push(projectPoint.features[i].properties.shortTitle);
+		}
+
+		var expStartData = {
+		  name: '',
+		  x: expStart,
+		  y: expJob,
+		  marker: {
+			color: 'rgba(255,255,255,1)',
+			  width: 1
+			},
+		  type: 'bar',
+		  orientation: 'h'
+		};
+		
+		var expEndData = {
+		  name: 'Experience',
+		  x: expEnd,
+		  y: expJob,
+		  marker: {
+			color: '#00BFFF',
+			/*line: {
+			  color: 'rgba(55,128,191,1)', */
+			  width: 0.5
+			},
+		  type: 'bar',
+		  orientation: 'h'
+		};
+		
+		var eduStartData = {
+		  name: '',
+		  x: eduStart,
+		  y: eduJob,
+		  marker: {
+			color: 'rgba(255,255,255,1)',
+			  width: 1
+		},
+		  type: 'bar',
+		  orientation: 'h'
+		};
+		
+		var eduEndData = {
+		  name: 'Education',
+		  x: eduEnd,
+		  y: eduJob,
+		  marker: {
+			color: '#4B0082',
+			width: 0.5
+		},
+		  type: 'bar',
+		  orientation: 'h'
+		};
+		
+		var projectStartData = {
+		  name: '',
+		  x: projectStart,
+		  y: projectJob,
+		  marker: {
+			color: 'rgba(255,255,255,1)',
+			 width: 1
+		  },
+		  type: 'bar',
+		  orientation: 'h'
+		};
+		
+		var projectEndData = {
+		  name: 'Project',
+		  x: projectEnd,
+		  y: projectJob,
+		  marker: {
+			color: 'darkred',
+			  width: 0.5
+		  },
+		  type: 'bar',
+		  orientation: 'h'
+		};
+		
+				
+		var layout = {
+			barmode:'overlay',
+			showlegend: false,
+			hoverinfo: "none",
+			xaxis: {
+				type: 'date',
+				autorange: false,
+				range: [1136073600000,1453142182000 ],
+				tickmode: 'auto'
+				
+			},
+			yaxis: {
+				type: 'category',
+				fixedrange: true
+			},
+			title:'Timeline 1999 - Present',
+			autosize: false,
+					width: 1000,
+					height: 35 + (point.features.length * 18),
+					margin: {
+						l: 350,
+						r: 80,
+						b: 5,
+						t: 45,
+						pad:5
+					},
+		};
+			
+		Plotly.newPlot('timeDiv', [expEndData, expStartData, eduEndData, eduStartData, projectEndData, projectStartData], layout);
+	};
+	
+	
+</script>
+</body>
+</html>

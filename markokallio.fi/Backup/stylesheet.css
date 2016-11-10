@@ -1,0 +1,143 @@
+ body {
+	padding: 0;
+	margin: 0;
+}
+
+html, body, #map {
+	height: 100%;
+	font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.lorem {
+	font-style: italic;
+	color: #AAA;
+}
+
+body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; right:250; width:100%; }
+  #marker-list {
+	  position:absolute;
+	  top:0; right:0; width:250px;
+	  bottom:0;
+	  overflow-x:auto;
+	  background-color: rgba(255, 255, 255, 0.7);;
+	  margin:0;
+	  padding:5px;
+	  font-size:25px;
+	  border-radius:10px;
+	  text-align:center;
+  }
+  #marker-list li {
+	  padding:5px;
+	  margin:auto;
+	  font-size:12px;
+  }
+  
+
+  .my-legend .legend-title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+	width: 100%;
+	font-size: 18px;
+	}
+  .my-legend .legend-scale ul {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	float: left;
+	list-style: none;
+	}
+  .my-legend .legend-scale ul li {
+	font-size: 80%;
+	list-style: none;
+	margin-left: 0;
+	line-height: 18px;
+	margin-bottom: 2px;
+	width:250px;
+	text-align:left;
+	}
+  .my-legend ul.legend-labels li span {
+	display: block;
+	float: left;
+	height: 16px;
+	width: 30px;
+	margin-right: 5px;
+	margin-left: 0;
+	border: 1px solid #999;
+	}
+  .my-legend .legend-source {
+	font-size: 70%;
+	color: #999;
+	clear: both;
+	}
+  .my-legend a {
+	color: #777;
+	font-size:12px;
+	}
+	.my-legend {
+	font-size:12px;
+	text-align:center;
+	}
+	.expItem {
+	text-align: left;
+	margin-bottom: 5px;
+	font-size: 90%;
+	width: 100%;
+	font-size: 14px;
+	}
+	
+	@media only screen and (max-width:640px) {
+	#map {
+		position: relative; /* instead of absolute */
+		}
+	.my-legend .legend-scale ul li {
+			width:50px;
+	}
+	}
+	
+	#marker-list {
+		width: 15vw;
+	}
+	/*@media (min-width: 768px) {
+		#marker-list {
+		  width: 100px;}
+		.my-legend .legend-scale ul li {
+			width:50px;
+		}
+	 }
+	  @media (min-width: 768px) and (max-width: 991px) {
+		#marker-list {
+		  width: 100px; }
+		.my-legend .legend-scale ul li {
+			width:50px;
+		}
+	 }
+	  @media (min-width: 992px) and (max-width: 1199px) {
+		#marker-list {
+		  width: 150px; } 
+		.my-legend .legend-scale ul li {
+			width:100px;
+			}
+	}
+	  @media (min-width: 1200px) {
+		#marker-list {
+		  width: 250px; } 
+		.my-legend .legend-scale ul li {
+			width:250px;
+		}  
+	}
+*/
+.controls {
+	width: 79.1vw;
+	height: 65vh;
+	padding: 6px 8px;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	overflow: auto;
+}	
+		
