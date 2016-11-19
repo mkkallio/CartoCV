@@ -1,0 +1,202 @@
+﻿{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sailor",
+        "org": "sailing company",
+        "description": "lorem ipsums a lot of sailing done",
+        "start": "01/2000",
+        "end": "07/2010",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            24.592768,
+            60.081758
+          ],
+          [
+            23.771413,
+            59.669544
+          ],
+          [
+            21.812798,
+            59.057835
+          ],
+          [
+            20.675538,
+            58.269279
+          ],
+          [
+            19.601458,
+            57.224126
+          ],
+          [
+            17.579662,
+            55.723839
+          ],
+          [
+            15.305141,
+            54.969433
+          ],
+          [
+            13.346526,
+            54.860485
+          ],
+          [
+            11.89336,
+            54.384962
+          ],
+          [
+            10.945643,
+            53.978244
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "2c617ba5bfc06fdf0b1a32a0114c6e4f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "nautical chart production",
+        "end": "12/2016",
+        "org": "Liikennevirasto",
+        "start": "06/2016",
+        "title": "trainee",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          24.93518,
+          60.198143
+        ],
+        "type": "Point"
+      },
+      "id": "5f9758c18a89a1bb82f86445380774f6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Geoinformatics studies. <br> line break test. ",
+        "end": "11/2016",
+        "org": "Aalto University",
+        "start": "09/2014",
+        "title": "Master's in Geoinformatics",
+        "type": "edu"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.83094,
+              60.17603
+            ],
+            [
+              24.818899,
+              60.180521
+            ],
+            [
+              24.811674,
+              60.185311
+            ],
+            [
+              24.817695,
+              60.189501
+            ],
+            [
+              24.836961,
+              60.195188
+            ],
+            [
+              24.845992,
+              60.192195
+            ],
+            [
+              24.841176,
+              60.182916
+            ],
+            [
+              24.83094,
+              60.17603
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "6b04852ddfcb45a5118d4cce2944d418"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "insinööri",
+        "description": "kiinteistöinsinöörin hommat helsingin kaupungilla",
+        "end": "",
+        "org": "helsingin kaupunki",
+        "start": "08/2010",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.857124,
+              60.16257
+            ],
+            [
+              24.788167,
+              60.218274
+            ],
+            [
+              24.904532,
+              60.252507
+            ],
+            [
+              24.982108,
+              60.232186
+            ],
+            [
+              25.003657,
+              60.175433
+            ],
+            [
+              24.962714,
+              60.138974
+            ],
+            [
+              24.876518,
+              60.133609
+            ],
+            [
+              24.857124,
+              60.16257
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "af5b9e0d5aaa009d8fc44884ff6a67a1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Guarding toursts at pisa tower in Espoo",
+        "end": "05/2014",
+        "org": "Espoo Municipality",
+        "start": "01/2013",
+        "title": "Pisa tower guard",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          24.686256,
+          60.17316
+        ],
+        "type": "Point"
+      },
+      "id": "b2773851818c380d944dfd1540562595"
+    }
+  ],
+  "type": "FeatureCollection"
+}
