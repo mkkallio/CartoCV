@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>CartoCV-Alpha</title>
+  <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0;background-color: #1f1f14; }
+    .map { position:absolute; top:0; bottom:0; width:70%; right: 0;}
+    .sidebar {width: 30%; background-color: #1f1f14;}
+  </style>
+</head>
+<body>
+  <div id='sidebar' class='sidebar'>
+    lore
+  </div>
+<div id='map' class='map'> </div>
+
+<script>
+
+// DEFINE USER ACCESS TOKEN, USERNAME AND DATASET ID
+mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ';
+//var username = 'mkallio';
+//var dataset_id = 'civp4w5r4001i2tmwdiitgrd9';
+
+
+// CREATE MAP
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+	center: [25, 60.2],
+	zoom: 9
+});
+
+// ADD DATA SOURCE, AND ADD DATA TO MAP
+map.on('load', function() {
+  map.addSource('data', {
+    type: 'vector',
+    url: 'mapbox://mkallio.civp4w5r4001i2tmwdiitgrd9-3gpcv'
+  });
+  map.addLayer({
+    id: 'polygons',
+    type: 'fill',
+    source: 'data',
+    'source-layer': 'dummy_data',
+    layout: {
+      visibility: 'visible'
+    },
+    paint: {
+      'fill-color': 'rgba(61,153,80,0.55)',
+	  'fill-outline-color': 'rgba(0,0,0,0)'
+    },
+	filter: ["==", "$type", "Polygon"]
+  });
+  map.addLayer({
+    id: 'lines',
+    type: 'line',
+    source: 'data',
+    'source-layer': 'dummy_data',
+    layout: {
+      visibility: 'visible'
+    },
+    paint: {
+      'line-color': 'rgba(61,153,80,0.55)',
+	  'line-width': 5
+    },
+	filter: ["==", "$type", "LineString"]
+  });
+  map.addLayer({
+    id: 'points',
+    type: 'circle',
+    source: 'data',
+    'source-layer': 'dummy_data',
+    layout: {
+      visibility: 'visible'
+    },
+    paint: {
+      'circle-color': 'rgba(61,153,80,0.55)',
+	  'circle-radius': 10
+    },
+	filter: ["==", "$type", "Point"]
+  });
+});
+
+
+
+</script>
+</body>
+</html>
