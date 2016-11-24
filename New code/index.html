@@ -4,31 +4,131 @@
   <meta charset=utf-8 />
   <title>CartoCV-Alfa</title>
   <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
   <style>
-    body { margin:0; padding:0;background-color: #1f1f14; }
-    .map { position:absolute; top:0; bottom:0; width:70%; right: 0;}
-    .sidebar {width: 30%; background-color: #1f1f14;}
+    html{
+      height: 100%;
+    }
+    body {
+      margin:0;
+      padding:0;
+      background-color: #1f1f14;
+      height: 100%;
+    }
+    .map {
+      position:absolute;
+      top:0;
+      bottom:0;
+      width:70%;
+      right: 0;}
+    #sidebar {
+      box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+      width: 30%;
+      height: 100%;
+      background-color: #1f1f14;
+      border-right: 4px solid #97a092;
+      padding-top: 20px;
+      }
+    #title {
+    color:#1f1f14;
+    border-radius: 35px;
+    background: #73AD21;
+    padding: 15px;
+    width: 150px;
+    height: 30px;
+    font:arial;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    border:2px solid #9fe27a;
+    #73AD21
+}
+  #buttonDiv{
+    margin-top: 40px;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+
+  }
+  .JobEduOth{
+    color:#1f1f14;
+    border:2px solid #9fe27a;
+    border-radius: 35px;
+    background: #73AD21;
+    padding: 15px;
+    width: 80px;
+    height: 13px;
+    font-size: 15px;
+    display:inline-block;
+    margin: 0;
+  }
+  .JobEduOth:hover {
+   border: 1px solid rgba(255,255,255,1);
+   text-shadow: #dbdbdb 0 1px 0;
+   background: #dbdbdb;
+   background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(#dbdbdb));
+   background: -webkit-linear-gradient(top, #dbdbdb, #dbdbdb);
+   background: -moz-linear-gradient(top, #dbdbdb, #dbdbdb);
+   background: -ms-linear-gradient(top, #dbdbdb, #dbdbdb);
+   background: -o-linear-gradient(top, #dbdbdb, #dbdbdb);
+   background-image: -ms-linear-gradient(top, #dbdbdb 0%, #dbdbdb 100%);
+   color: #000000;
+   }
+
+   .JobEduOth:active {
+   text-shadow: #dbdbdb 0 1px 0;
+   border: 1px solid rgba(255,255,255,1);
+   background: #dbdbdb;
+   background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(#dbdbdb));
+   background: -webkit-linear-gradient(top, #dbdbdb, #dbdbdb);
+   background: -moz-linear-gradient(top, #dbdbdb, #dbdbdb);
+   background: -ms-linear-gradient(top, #dbdbdb, #dbdbdb);
+   background: -o-linear-gradient(top, #dbdbdb, #dbdbdb);
+   background-image: -ms-linear-gradient(top, #dbdbdb 0%, #dbdbdb 100%);
+   color: #000000;
+   }
+
   </style>
 </head>
 <body>
-  <div id='sidebar' class='sidebar'>
-    lore
+  <div id='sidebar'>
+
+    <div id='title'>My CartoCV
+    </div>
+    <div id='buttonDiv'>
+      <div id='Education' class="JobEduOth">
+        Education
+      </div>
+      <div id='Job' class="JobEduOth">
+        Job
+      </div>
+      <div id='Other' class="JobEduOth">
+        Other
+      </div>
+    </div>
   </div>
 <div id='map' class='map'> </div>
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoicGlsa2tpaGFhbGFyaSIsImEiOiJjaWdkcXgzZnAwN3pndnVrbmdpZXUxcTl5In0.fadW75jN0pyVxefmFAaN0g';
-  L.mapbox.map('map', 'mapbox.streets').setView([60.2, 25], 10);
-  var layer = L.mapbox.tileLayer('pilkkihaalari.civp6rlg6001a2omnyi1xnffm-4po5g');
-/*
-  var layer = L.mapbox.tileLayer('pilkkihaalari.civp6rlg6001a2omnyi1xnffm-4po5g');
-  client.readDataset('civp6rlg6001a2omnyi1xnffm',
-    function(err,dataset){
-      console.log(dataset)
-    }
-  )
-*/
+var map = new  L.mapbox.map('map', 'mapbox.streets').setView([60.2, 25], 10);
+
+var styleLayer = L.mapbox.styleLayer('mapbox://styles/pilkkihaalari/civpdykc3005p2kpgkk52tlhl')
+    .addTo(map);
+$( "#Education" ).click(function() {
+  alert( "Handler for .click() called." );
+});
+$( "#Job" ).click(function() {
+  alert( "Handler for .click() called." );
+});
+$( "#Other" ).click(function() {
+  alert( "Handler for .click() called." );
+});
 </script>
 </body>
 </html>
