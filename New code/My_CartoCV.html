@@ -41,6 +41,15 @@
      vertical-align: middle;
      line-height: 40px;
 	}
+	.sidebarText {
+	 color: #FFFFFF;
+     font:arial;
+     font-size: 12px;
+	 margin: 0 auto;
+     text-align: left;
+     vertical-align: middle;
+     line-height: 14px;
+	}
 	#buttonDiv{
      margin-top: 40px;
      width: 100%;
@@ -95,19 +104,22 @@
 	</div>
     <div id='buttonDiv'>
       <div id='Education' class="JobEduOth">
-        Education
+			Education
       </div>
-	  <div id='eduContent'>
+	  <div id='eduContent' class="sidebarText">
+			testi
 	  </div>
       <div id='Job' class="JobEduOth">
         Job
       </div>
-	  <div id='jobContent'>
+	  <div id='jobContent' class="sidebarText">
+			testi
 	  </div>
       <div id='Other' class="JobEduOth">
-        Other
+			Other
       </div>
-	  <div id='otherContent'>
+	  <div id='otherContent' class="sidebarText">
+			testi
 	  </div>
     </div>
   </div>
@@ -133,14 +145,14 @@ var map = new mapboxgl.Map({
 map.on('load', function() {
   map.addSource('data', {
     type: 'vector',
-    url: 'mapbox://mkallio.civp4w5r4001i2tmwdiitgrd9-3gpcv'
+    url: 'mapbox://mkallio.ciw0rrq36003b2zo4ube8du4l-0jf4c'
   });
   // add polygons to map
   map.addLayer({
     id: 'polygons',
     type: 'fill',
     source: 'data',
-    'source-layer': 'dummy_data',
+    'source-layer': 'CartoCV',
     layout: {
       visibility: 'visible'
     },
@@ -173,7 +185,7 @@ map.on('load', function() {
     id: 'lines',
     type: 'line',
     source: 'data',
-    'source-layer': 'dummy_data',
+    'source-layer': 'CartoCV',
     layout: {
       visibility: 'visible'
     },
@@ -197,7 +209,7 @@ map.on('load', function() {
     id: 'points',
     type: 'circle',
     source: 'data',
-    'source-layer': 'dummy_data',
+    'source-layer': 'CartoCV',
     layout: {
       visibility: 'visible'
     },
