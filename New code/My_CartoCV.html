@@ -69,30 +69,34 @@
      margin: 0;
   }
   .JobEduOth:hover {
-   border: 1px solid rgba(255,255,255,1);
-   text-shadow: #dbdbdb 0 1px 0;
-   background: #dbdbdb;
-   background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(#dbdbdb));
-   background: -webkit-linear-gradient(top, #dbdbdb, #dbdbdb);
-   background: -moz-linear-gradient(top, #dbdbdb, #dbdbdb);
-   background: -ms-linear-gradient(top, #dbdbdb, #dbdbdb);
-   background: -o-linear-gradient(top, #dbdbdb, #dbdbdb);
-   background-image: -ms-linear-gradient(top, #dbdbdb 0%, #dbdbdb 100%);
-   color: #000000;
+    border: 1px solid rgba(255,255,255,1);
+    text-shadow: #dbdbdb 0 1px 0;
+    background: #dbdbdb;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(#dbdbdb));
+    background: -webkit-linear-gradient(top, #dbdbdb, #dbdbdb);
+    background: -moz-linear-gradient(top, #dbdbdb, #dbdbdb);
+    background: -ms-linear-gradient(top, #dbdbdb, #dbdbdb);
+    background: -o-linear-gradient(top, #dbdbdb, #dbdbdb);
+    background-image: -ms-linear-gradient(top, #dbdbdb 0%, #dbdbdb 100%);
+    color: #000000;
    }
 
    .JobEduOth:active {
-   text-shadow: #dbdbdb 0 1px 0;
-   border: 1px solid rgba(255,255,255,1);
-   background: #dbdbdb;
-   background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(#dbdbdb));
-   background: -webkit-linear-gradient(top, #dbdbdb, #dbdbdb);
-   background: -moz-linear-gradient(top, #dbdbdb, #dbdbdb);
-   background: -ms-linear-gradient(top, #dbdbdb, #dbdbdb);
-   background: -o-linear-gradient(top, #dbdbdb, #dbdbdb);
-   background-image: -ms-linear-gradient(top, #dbdbdb 0%, #dbdbdb 100%);
-   color: #000000;
+    text-shadow: #dbdbdb 0 1px 0;
+    border: 1px solid rgba(255,255,255,1);
+    background: #dbdbdb;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(#dbdbdb));
+    background: -webkit-linear-gradient(top, #dbdbdb, #dbdbdb);
+    background: -moz-linear-gradient(top, #dbdbdb, #dbdbdb);
+    background: -ms-linear-gradient(top, #dbdbdb, #dbdbdb);
+    background: -o-linear-gradient(top, #dbdbdb, #dbdbdb);
+    background-image: -ms-linear-gradient(top, #dbdbdb 0%, #dbdbdb 100%);
+    color: #000000;
    }
+   
+  .mapboxgl-popup-content {
+   max-width: 300px
+  }
   </style>
 </head>
 <body>
@@ -126,6 +130,8 @@
 <div id='map' class='map'> </div>
 
 <script>
+var layer = [];
+var destination = [];
 
 // DEFINE USER ACCESS TOKEN, USERNAME AND DATASET ID
 mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ';
@@ -135,7 +141,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn
 // CREATE MAP
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/dark-v9',
+    style: 'mapbox://styles/mkallio/civp85wyf006d2joiyxwc0you',
 	center: [25, 60.2],
 	zoom: 9
 });
@@ -143,140 +149,196 @@ var map = new mapboxgl.Map({
 
 // ADD DATA SOURCE, AND ADD DATA TO MAP. ALL FEATURE TYPES MUST BE ADDED SEPARATELY.
 map.on('load', function() {
-  map.addSource('data', {
-    type: 'vector',
-    url: 'mapbox://mkallio.ciw0rrq36003b2zo4ube8du4l-0jf4c'
-  });
-  // add polygons to map
-  map.addLayer({
-    id: 'polygons',
-    type: 'fill',
-    source: 'data',
-    'source-layer': 'CartoCV',
-    layout: {
-      visibility: 'visible'
-    },
-	// colour according to property: 'type'
-    paint: {
-		'fill-color': {
-                property: 'type',
-                type: 'categorical',
-                stops: [
-                    ['edu', '#9c89cc'],
-                    ['work', '#1087bf'],
-                    ['other', '#d27591']
-				]
-            },
-		'fill-opacity': 0.4,
-		'fill-outline-color': {
-                property: 'type',
-                type: 'categorical',
-                stops: [
-                    ['edu', '#9c89cc'],
-                    ['work', '#1087bf'],
-                    ['other', '#d27591']
-				]
-            }
-    },
-	filter: ["==", "$type", "Polygon"]
-  });
-  // add lines to map
-  map.addLayer({
-    id: 'lines',
-    type: 'line',
-    source: 'data',
-    'source-layer': 'CartoCV',
-    layout: {
-      visibility: 'visible'
-    },
-	// colour according to property: 'type'
-    paint: {
-		'line-color': {
-                property: 'type',
-                type: 'categorical',
-                stops: [
-                    ['edu', '#9c89cc'],
-                    ['work', '#1087bf'],
-                    ['other', '#d27591']
-				]
-            },
-		'line-width': 3
-    },
-	filter: ["==", "$type", "LineString"]
-  });
-  // add points to map
-  map.addLayer({
-    id: 'points',
-    type: 'circle',
-    source: 'data',
-    'source-layer': 'CartoCV',
-    layout: {
-      visibility: 'visible'
-    },
-	// colour according to property: 'type'
-    paint: {
-		'circle-color': {
-                property: 'type',
-                type: 'categorical',
-                stops: [
-                    ['edu', '#9c89cc'],
-                    ['work', '#1087bf'],
-                    ['other', '#d27591']
-				]
-            },
-		'circle-blur': 1,
-		'circle-radius': 10
-    },
-	filter: ["==", "$type", "Point"]
-  });
+
+	var addData = function(callback) {
+		  map.addSource('data', {
+			type: 'vector',
+			url: 'mapbox://mkallio.ciw0rrq36003b2zo4ube8du4l-0jf4c'
+		  });
+		  // add polygons to map
+		  map.addLayer({
+			id: 'polygons',
+			type: 'fill',
+			source: 'data',
+			'source-layer': 'CartoCV',
+			layout: {
+			  visibility: 'visible'
+			},
+			// colour according to property: 'type'
+			paint: {
+				'fill-color': {
+						property: 'type',
+						type: 'categorical',
+						stops: [
+							['edu', '#9c89cc'],
+							['work', '#1087bf'],
+							['other', '#d27591']
+						]
+					},
+				'fill-opacity': 0.4,
+				'fill-outline-color': {
+						property: 'type',
+						type: 'categorical',
+						stops: [
+							['edu', '#9c89cc'],
+							['work', '#1087bf'],
+							['other', '#d27591']
+						]
+					}
+			},
+			filter: ["==", "$type", "Polygon"]
+		  });
+		  // add lines to map
+		  map.addLayer({
+			id: 'lines',
+			type: 'line',
+			source: 'data',
+			'source-layer': 'CartoCV',
+			layout: {
+			  visibility: 'visible'
+			},
+			// colour according to property: 'type'
+			paint: {
+				'line-color': {
+						property: 'type',
+						type: 'categorical',
+						stops: [
+							['edu', '#9c89cc'],
+							['work', '#1087bf'],
+							['other', '#d27591']
+						]
+					},
+				'line-width': 3
+			},
+			filter: ["==", "$type", "LineString"]
+		  });
+		  // add points to map
+		  map.addLayer({
+			id: 'points',
+			type: 'circle',
+			source: 'data',
+			'source-layer': 'CartoCV',
+			layout: {
+			  visibility: 'visible'
+			},
+			// colour according to property: 'type'
+			paint: {
+				'circle-color': {
+						property: 'type',
+						type: 'categorical',
+						stops: [
+							['edu', '#9c89cc'],
+							['work', '#1087bf'],
+							['other', '#d27591']
+						]
+					},
+				'circle-blur': 1,
+				'circle-radius': 10
+			},
+			filter: ["==", "$type", "Point"]
+		  });
+		  
+	  //fire callback in case callback is defined AND it is a function
+		if (callback && typeof(callback) === "function") {
+			callback();
+		};
+	}; // finish addData function
+
+	addData(function() {
+		//CREATE MARKERS FOR CLUSTERING
+		
+		// get GeoJSON from the map layers
+		//var pointFeatures = map.queryRenderedFeatures({ layers: ['edu', 'work','other'] });
+		//var lineFeatures = map.queryRenderedFeatures({filter: ["==","type","edu"]});
+		//var polygonFeatures = map.queryRenderedFeatures({ layers: ['polygons'] });
+		var features = map.queryRenderedFeatures({ layers: ['polygons', 'lines', 'points'] });
+		
+		console.log(features);
+		//console.log(map.querySourceFeatures('data', {sourceLayer: 'CartoCV'}));
+		//console.log(pointFeatures);
+		//console.log(lineFeatures);
+		//console.log(polygonFeatures);
+		
+		console.log(map);
+		console.log(map.getCanvas());
+		
+		var markers = {
+				"type": "FeatureCollection",
+				"features": [{
+					"type": "Feature",
+					"properties": {
+						"icon": "monument",
+						"title": "Null Island"
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0,0]
+					}
+				}]
+			}
+		
+		//addPointMarkers(pointFeatures, markers);
+		console.log(markers);
+		
+		// ADD MARKER LAYERS TO MAP
+		map.addSource("unclusteredMarkers", {
+			"type": "geojson",
+			"data": markers
+		});	
+		
+		 map.addLayer({
+			"id": "unclustered",
+			"type": "symbol",
+			"source": "unclusteredMarkers",
+			"layout": {
+				"icon-image": "{icon}-15",
+				"text-field": "{title}",
+				"text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+				"text-offset": [0, 0.6],
+				"text-anchor": "top"
+			}
+		});
+				
+		// ADD features from 'points' layer to unclustered markers
+	});	
   
+  
+	// CREATE POPUPS (from mapbox gl tutorials)
+	// When a click event occurs near a place, open a popup at the location of
+	// the feature, with description HTML from its properties.
+	map.on('click', function (e) {
+		var features = map.queryRenderedFeatures(e.point, { layers: ['polygons', 'lines', 'points'] });
+
+		if (!features.length) {
+			return;
+		}
+
+		var feature = features[0];
+
+		// Populate the popup and set its coordinates
+		// based on the feature found.
+		var popup2 = new mapboxgl.Popup()
+			.setLngLat(map.unproject(e.point))
+			.setHTML("<b>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br> Description: " + feature.properties.description)
+			.addTo(map);
+	});
+
+
+	// Use the same approach as above to indicate that the symbols are clickable
+	// by changing the cursor style to 'pointer'.
+	map.on('mousemove', function (e) {
+		var features = map.queryRenderedFeatures(e.point, { layers: ['polygons', 'lines', 'points'] });
+		map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+	});
 });
-
-// When a click event occurs near a place, open a popup at the location of
-// the feature, with description HTML from its properties.
-map.on('click', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
-
-    if (!features.length) {
-        return;
-    }
-
-    var feature = features[0];
-
-    // Populate the popup and set its coordinates
-    // based on the feature found.
-    var popup = new mapboxgl.Popup()
-        .setLngLat(feature.geometry.coordinates)
-        .setHTML("<b>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br> Description: " + feature.properties.description)
-        .addTo(map);
-});
-
-// the same as above, but for polygons and lines
-map.on('click', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['polygons', 'lines'] });
-
-    if (!features.length) {
-        return;
-    }
-
-    var feature = features[0];
-
-    // Populate the popup and set its coordinates
-    // based on the feature found.
-    var popup = new mapboxgl.Popup()
-        .setLngLat(map.unproject(e.point))
-        .setHTML("<b>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br> Description: " + feature.properties.description)
-        .addTo(map);
-});
-
-
-// Use the same approach as above to indicate that the symbols are clickable
-// by changing the cursor style to 'pointer'.
-map.on('mousemove', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['polygons', 'lines', 'points'] });
-    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-});
-
+/*
+var addPointMarkers = function (pointFeatures, markers) {
+	for (i=0; pointFeatures.features.length; i++) {
+		var tempGeoJSON = layer.features[i];
+		markers.features.push(tempGeoJSON)
+	}
+}
+	*/
 </script>
 </body>
 </html>
