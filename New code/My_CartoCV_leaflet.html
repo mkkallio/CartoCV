@@ -8,16 +8,18 @@
   <script src='data2.geojson'></script>
   <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
   <script src="js/leaflet.awesome-markers.min.js"></script>
-  
-  
+  <script src="leaflet.markercluster-src.js"></script>
+
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style/stylesheet_leaflet.css">
   <link rel="stylesheet" href="style/leaflet.awesome-markers.css">
-  
+  <link rel="stylesheet" href="MarkerCluster.css" />
+	<link rel="stylesheet" href="MarkerCluster.Default.css" />
  </head>
 <body>
+
   <div id='sidebar'>
 
     <div id='title'>CartoCV
@@ -47,8 +49,13 @@
   </div>
 <div id='map' class='map'> </div>
 
-<script> 
-  
+<script>
+//GLOBAL VARIABLES
+var cvMarkerCluster = new L.markerClusterGroup({
+    maxClusterRadius: 25,
+    showCoverageOnHover: false
+});
+var cvMarkers; // L.geoJson object which is added in cvMarkerCluster
 // DEFINE USER ACCESS TOKEN, USERNAME AND DATASET ID
 mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ';
 
@@ -67,7 +74,7 @@ var eduMarker = L.AwesomeMarkers.icon({
 console.log(data);
 var edu = L.geoJson(data, {
 		filter: function(feature, layer) {
-			return feature.properties.type == "edu" && feature.geometry.type == "point";
+			return feature.properties.type == "edu";
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
@@ -77,9 +84,25 @@ var edu = L.geoJson(data, {
 		onEachFeature: function (feature, layer) {
 			layer.bindPopup("<b>" + feature.properties.title + "</b><br>" + feature.properties.description);
 		}
-	}).addTo(map);	
-  
-  
+	}).addTo(map);
+  cvMarkers = L.geoJson(data, {
+      pointToLayer: function(feature, latlng) {
+        return L.marker(latlng, {
+          icon: L.AwesomeMarkers.icon({
+                icon: 'home',
+                prefix: 'fa',
+                markerColor: 'cadetblue',
+                iconColor: 'white'
+              })
+        })
+      },
+      riseOnHover: true
+  });
+
+  // add venueMarkers layer to the cluster group and add it to map
+  cvMarkerCluster.addLayer(cvMarkers).addTo(map);
+
+
 </script>
 </body>
 </html>
