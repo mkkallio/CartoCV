@@ -50,34 +50,82 @@
 <script> 
   
 // DEFINE USER ACCESS TOKEN, USERNAME AND DATASET ID
-mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ';
+//mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ';
 
 
 // CREATE MAP
 var map=new L.Map('map').setView([43.326139, 31.972922], 3);
-	L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
-		attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>.'
+	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ', {
+		attribution: 'Map tiles © <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>'
 	}).addTo(map);
 
+	
+// DEFINE ICONS FOR POINTS
 var eduMarker = L.AwesomeMarkers.icon({
 		icon: 'graduation-cap',
 		prefix: 'fa',
 		markerColor: 'darkpurple'
 	});
+	
+var workMarker = L.AwesomeMarkers.icon({
+	icon: 'cogs',
+	prefix: 'fa',
+	markerColor: 'blue'
+});
+
+var otherMarker = L.AwesomeMarkers.icon({
+		icon: 'check-square-o',
+		prefix: 'fa',
+		markerColor: 'darkred'
+	});
+
+	
+	
+	
 console.log(data);
-var edu = L.geoJson(data, {
+
+
+// POPUP DEFINITION
+var onEachFeature = function (feature, layer) {
+			layer.bindPopup("<b>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description);
+};
+		
+// ADD MARKERS ON MAP
+var eduMarkers = L.geoJson(data, {
 		filter: function(feature, layer) {
-			return feature.properties.type == "edu" && feature.geometry.type == "point";
+			return (feature.properties.type == "edu" && feature.geometry.type == "Point");
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: eduMarker
 			})
 		},
-		onEachFeature: function (feature, layer) {
-			layer.bindPopup("<b>" + feature.properties.title + "</b><br>" + feature.properties.description);
-		}
-	}).addTo(map);	
+		onEachFeature: onEachFeature
+	}).addTo(map);
+
+var workMarkers = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.type == "work" && feature.geometry.type == "Point");
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: workMarker
+			})
+		},
+		onEachFeature: onEachFeature
+	}).addTo(map);
+
+var otherMarkers = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.type == "other" && feature.geometry.type == "Point");
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: otherMarker
+			})
+		},
+		onEachFeature: onEachFeature
+	}).addTo(map);
   
   
 </script>
