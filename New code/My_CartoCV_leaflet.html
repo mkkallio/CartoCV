@@ -95,7 +95,7 @@ var otherMarker = L.AwesomeMarkers.icon({
 	});
 
 
-
+/*
 var lineArea_style = function(feature) {
 		switch (feature.properties.class) {
 			case 'exp': return {color: "#00BFFF", fillOpacity: 0.2, weight: 4};
@@ -103,7 +103,7 @@ var lineArea_style = function(feature) {
 			case 'project':   return {color: "darkred", fillOpacity: 0.2, weight: 4};
 		}
 	};
-
+*/
 
 
 console.log(data);
@@ -193,53 +193,47 @@ workFeatures.addTo(map);
 otherFeatures.addTo(map);
 markerCluster.addTo(map);
 
+
+// DEFINE FUNCTIONS FOR SIDEBAR
 var emptyContent=function(){
   $eduContent.empty();
   $jobContent.empty();
   $otherContent.empty();
 };
 
-  $Education.on('click',function(){
-    //removeLayers();
-    emptyContent();
-    data.features.forEach(function(feature){
+$Education.on('click',function(){
+		//removeLayers();
+		emptyContent();
+		
+		data.features.forEach(function(feature) {
 
-      if (feature.properties.type=='edu'){
-        $eduContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+		  if (feature.properties.type=='edu' && feature.geometry.type == "Point") {
+			$eduContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+		  }
+		})
+});
 
-      }
+$Job.on('click',function(){
+		emptyContent();
+		
+		data.features.forEach(function(feature) {
 
-    })
+		  if (feature.properties.type=='work' && feature.geometry.type == "Point") {
+			$jobContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+		  }
+		})
+});
 
-  });
+$Other.on('click',function(){
+		emptyContent();
+		
+		data.features.forEach(function(feature) {
 
-  $Job.on('click',function(){
-    //removeLayers();
-    emptyContent();
-    data.features.forEach(function(feature){
-
-      if (feature.properties.type=='work'){
-        $jobContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
-
-      }
-
-    })
-
-  });
-
-  $Other.on('click',function(){
-    //removeLayers();
-    emptyContent();
-    data.features.forEach(function(feature){
-
-      if (feature.properties.type=='other'){
-        $otherContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
-
-      }
-
-    })
-
-  });
+		  if (feature.properties.type=='other' && feature.geometry.type == "Point") {
+			$otherContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+		  } 
+		})
+});
 
 
 
