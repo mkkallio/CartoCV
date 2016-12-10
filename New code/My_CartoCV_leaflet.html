@@ -8,16 +8,18 @@
   <script src='data2.geojson'></script>
   <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
   <script src="js/leaflet.awesome-markers.min.js"></script>
-  
-  
+  <script src="leaflet.markercluster-src.js"></script>
+
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style/stylesheet_leaflet.css">
   <link rel="stylesheet" href="style/leaflet.awesome-markers.css">
-  
+  <link rel="stylesheet" href="MarkerCluster.css" />
+	<link rel="stylesheet" href="MarkerCluster.Default.css" />
  </head>
 <body>
+
   <div id='sidebar'>
 
     <div id='title'>CartoCV
@@ -47,8 +49,15 @@
   </div>
 <div id='map' class='map'> </div>
 
-<script> 
-  
+<script>
+//GLOBAL VARIABLES
+var cvMarkerCluster = new L.markerClusterGroup({
+    maxClusterRadius: 25,
+    showCoverageOnHover: false
+});
+
+
+
 // DEFINE USER ACCESS TOKEN, USERNAME AND DATASET ID
 //mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ';
 
@@ -93,13 +102,16 @@ var onEachFeature = function (feature, layer) {
 // ADD MARKERS ON MAP
 var eduMarkers = L.geoJson(data, {
 		filter: function(feature, layer) {
+
 			return (feature.properties.type == "edu" && feature.geometry.type == "Point");
+
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: eduMarker
 			})
 		},
+
 		onEachFeature: onEachFeature
 	}).addTo(map);
 
@@ -128,6 +140,13 @@ var otherMarkers = L.geoJson(data, {
 	}).addTo(map);
   
   
+
+
+  // add venueMarkers layer to the cluster group and add it to map
+  cvMarkerCluster.addLayer(cvMarkers).addTo(map);
+
+
+
 </script>
 </body>
 </html>
