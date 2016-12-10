@@ -55,8 +55,12 @@ var markerCluster = new L.markerClusterGroup({
     maxClusterRadius: 25,
     showCoverageOnHover: false
 });
-
-
+var $Education=$('#Education');
+var $Job=$('#Job');
+var $Other=$('#Other');
+var $eduContent=$('#eduContent')
+var $jobContent=$('#jobContent')
+var $otherContent=$('#otherContent')
 
 // DEFINE USER ACCESS TOKEN, USERNAME AND DATASET ID
 //mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ';
@@ -68,14 +72,14 @@ var map=new L.Map('map').setView([43.326139, 31.972922], 3);
 		attribution: 'Map tiles © <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>'
 	}).addTo(map);
 
-	
+
 // DEFINE ICONS FOR POINTS
 var eduMarker = L.AwesomeMarkers.icon({
 		icon: 'graduation-cap',
 		prefix: 'fa',
 		markerColor: 'darkpurple'
 	});
-	
+
 var workMarker = L.AwesomeMarkers.icon({
 	icon: 'cogs',
 	prefix: 'fa',
@@ -88,9 +92,9 @@ var otherMarker = L.AwesomeMarkers.icon({
 		markerColor: 'darkred'
 	});
 
-	
-	
-	
+
+
+
 console.log(data);
 
 
@@ -98,7 +102,7 @@ console.log(data);
 var onEachFeature = function (feature, layer) {
 			layer.bindPopup("<b>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description);
 };
-		
+
 // ADD MARKERS ON MAP
 var eduMarkers = L.geoJson(data, {
 		filter: function(feature, layer) {
@@ -138,12 +142,60 @@ var otherMarkers = L.geoJson(data, {
 		},
 		onEachFeature: onEachFeature
 	}).addTo(markerCluster);
-  
-  
+
+
 
 
   // add venueMarkers layer to the cluster group and add it to map
   markerCluster.addTo(map);
+
+var emptyContent=function(){
+  $eduContent.empty();
+  $jobContent.empty();
+  $otherContent.empty();
+};
+
+  $Education.on('click',function(){
+    //removeLayers();
+    emptyContent();
+    data.features.forEach(function(feature){
+
+      if (feature.properties.type=='edu'){
+        $eduContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+
+      }
+
+    })
+
+  });
+
+  $Job.on('click',function(){
+    //removeLayers();
+    emptyContent();
+    data.features.forEach(function(feature){
+
+      if (feature.properties.type=='work'){
+        $jobContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+
+      }
+
+    })
+
+  });
+
+  $Other.on('click',function(){
+    //removeLayers();
+    emptyContent();
+    data.features.forEach(function(feature){
+
+      if (feature.properties.type=='other'){
+        $otherContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+
+      }
+
+    })
+
+  });
 
 
 
