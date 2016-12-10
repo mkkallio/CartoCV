@@ -51,7 +51,7 @@
 
 <script>
 //GLOBAL VARIABLES
-var cvMarkerCluster = new L.markerClusterGroup({
+var markerCluster = new L.markerClusterGroup({
     maxClusterRadius: 25,
     showCoverageOnHover: false
 });
@@ -113,7 +113,7 @@ var eduMarkers = L.geoJson(data, {
 		},
 
 		onEachFeature: onEachFeature
-	}).addTo(map);
+	}).addTo(markerCluster);
 
 var workMarkers = L.geoJson(data, {
 		filter: function(feature, layer) {
@@ -125,7 +125,7 @@ var workMarkers = L.geoJson(data, {
 			})
 		},
 		onEachFeature: onEachFeature
-	}).addTo(map);
+	}).addTo(markerCluster);
 
 var otherMarkers = L.geoJson(data, {
 		filter: function(feature, layer) {
@@ -137,13 +137,13 @@ var otherMarkers = L.geoJson(data, {
 			})
 		},
 		onEachFeature: onEachFeature
-	}).addTo(map);
+	}).addTo(markerCluster);
   
   
 
 
   // add venueMarkers layer to the cluster group and add it to map
-  cvMarkerCluster.addLayer(cvMarkers).addTo(map);
+  markerCluster.addTo(map);
 
 
 
