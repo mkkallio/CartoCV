@@ -5,6 +5,7 @@
   <title>CartoCV-Alpha</title>
   <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
+  <script src='data2.geojson'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' />
   <style>
     html{
@@ -130,18 +131,16 @@
 <div id='map' class='map'> </div>
 
 <script>
-var layer = [];
-var destination = [];
+
 
 // DEFINE USER ACCESS TOKEN, USERNAME AND DATASET ID
 mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ';
 
 
-
 // CREATE MAP
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mkallio/civp85wyf006d2joiyxwc0you',
+    style: 'mapbox://styles/mapbox/dark-v9',
 	center: [25, 60.2],
 	zoom: 9
 });
@@ -152,15 +151,14 @@ map.on('load', function() {
 
 
 	  map.addSource('data', {
-		type: 'vector',
-		url: 'mapbox://mkallio.ciw0rrq36003b2zo4ube8du4l-0jf4c'
+		type: 'geojson',
+		data: data
 	  });
 	  // add polygons to map
 	  map.addLayer({
 		id: 'polygons',
 		type: 'fill',
 		source: 'data',
-		'source-layer': 'CartoCV',
 		layout: {
 		  visibility: 'visible'
 		},
@@ -193,7 +191,6 @@ map.on('load', function() {
 		id: 'lines',
 		type: 'line',
 		source: 'data',
-		'source-layer': 'CartoCV',
 		layout: {
 		  visibility: 'visible'
 		},
@@ -217,7 +214,6 @@ map.on('load', function() {
 		id: 'points',
 		type: 'circle',
 		source: 'data',
-		'source-layer': 'CartoCV',
 		layout: {
 		  visibility: 'visible'
 		},
@@ -236,19 +232,27 @@ map.on('load', function() {
 			'circle-radius': 10
 		},
 		filter: ["==", "$type", "Point"]
-	  });
-	/*  
+	  }); 
+	
 	  map.addLayer({
 		id: 'markers',
 		type: 'symbol',
 		source: 'data',
-		'source-layer': 'CartoCV',
 		layout: {
-		  visibility: 'visible',
-		  symbol-placement: 'point',
-		  icon-allow-overlap: true,
+		  'visibility': 'visible',
+		  'symbol-spacing': 100000,
+		  'icon-allow-overlap': true,
+		  'icon-image': "marker-15"  /*{
+					'property': 'type',
+					'type': 'categorical',
+					'stops': [
+						['edu', 'college-15'],
+						['work', 'suitcase-15'],
+						['other', 'marker-15']
+					]
+				}*/
 		  
-		},
+		}/*,
 		// colour according to property: 'type'
 		paint: {
 			'icon-image': {
@@ -259,12 +263,12 @@ map.on('load', function() {
 						['other', 'clipboard-15']
 					]
 				}
-		}
+		} */
 	  });
 	  
-	  */
 	  
-	  console.log(data.features);
+	  
+
  
  
  
@@ -343,7 +347,7 @@ map.on('load', function() {
 		// based on the feature found.
 		var popup = new mapboxgl.Popup()
 			.setLngLat(map.unproject(e.point))
-			.setHTML("<b>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br> Description: " + feature.properties.description)
+			.setHTML("<b>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description)
 			.addTo(map);
 	});
 

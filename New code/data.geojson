@@ -1,0 +1,4332 @@
+﻿var data = {
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The job consisted mainly of taking care of public court yards and doing minor repairs in apartment buildings . The work was mobile and areas included apartment compounds in Malminkartano and Konala.",
+        "end": "07/2004",
+        "org": "Malminkartanon Kiinteistöt Oy",
+        "start": "06/1999",
+        "title": "5 x Summer Intern",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.857553,
+              60.241073
+            ],
+            [
+              24.862807,
+              60.242046
+            ],
+            [
+              24.865259,
+              60.242011
+            ],
+            [
+              24.868411,
+              60.242846
+            ],
+            [
+              24.871633,
+              60.24521
+            ],
+            [
+              24.871002,
+              60.246948
+            ],
+            [
+              24.86701,
+              60.248964
+            ],
+            [
+              24.868831,
+              60.249937
+            ],
+            [
+              24.86659,
+              60.251084
+            ],
+            [
+              24.86701,
+              60.252092
+            ],
+            [
+              24.865469,
+              60.252683
+            ],
+            [
+              24.864348,
+              60.253204
+            ],
+            [
+              24.858324,
+              60.25383
+            ],
+            [
+              24.856293,
+              60.254212
+            ],
+            [
+              24.85265,
+              60.254629
+            ],
+            [
+              24.849008,
+              60.254594
+            ],
+            [
+              24.846626,
+              60.254247
+            ],
+            [
+              24.846976,
+              60.252996
+            ],
+            [
+              24.848938,
+              60.250424
+            ],
+            [
+              24.848587,
+              60.248443
+            ],
+            [
+              24.847747,
+              60.2474
+            ],
+            [
+              24.848798,
+              60.246148
+            ],
+            [
+              24.850199,
+              60.245557
+            ],
+            [
+              24.857553,
+              60.241073
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "02cba850e49f815f8f0e5af2cebf1eb0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "I worked as a Trainee in Nautical Chart production team. Job included GIS analysis, database quality checks and corrections, preparing new Electronic Nautical Charts for production, data transfer between old and new systems and testing a potential new production system (CARIS).",
+        "end": "12/2016",
+        "org": "Finnish Transport Agency",
+        "start": "06/2016",
+        "title": "Trainee",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.93653,
+              60.19964
+            ],
+            [
+              24.937045,
+              60.198589
+            ],
+            [
+              24.937388,
+              60.198627
+            ],
+            [
+              24.936854,
+              60.199687
+            ],
+            [
+              24.93653,
+              60.19964
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "05693e6b4ef655e10f3fe3d7fd886bea"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Working in two professional fairs in customer service and information desk. Short term job in 2004.",
+        "end": "10/2004",
+        "org": "BBM Oy",
+        "start": "10/2004",
+        "title": "Fair assistant",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.935626,
+              60.202282
+            ],
+            [
+              24.934714,
+              60.202175
+            ],
+            [
+              24.93464,
+              60.202301
+            ],
+            [
+              24.933575,
+              60.202191
+            ],
+            [
+              24.93328,
+              60.203663
+            ],
+            [
+              24.934245,
+              60.203822
+            ],
+            [
+              24.935081,
+              60.203902
+            ],
+            [
+              24.937204,
+              60.204046
+            ],
+            [
+              24.937879,
+              60.202704
+            ],
+            [
+              24.937783,
+              60.202432
+            ],
+            [
+              24.937911,
+              60.202128
+            ],
+            [
+              24.937686,
+              60.20192
+            ],
+            [
+              24.936593,
+              60.201761
+            ],
+            [
+              24.936335,
+              60.20216
+            ],
+            [
+              24.935704,
+              60.202124
+            ],
+            [
+              24.935626,
+              60.202282
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "0e509de6b560c3b27073ada932439751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Thesis research on water poverty in Lao PDR using exploratory and data mining methods. The final thesis is titled \"An exploration of water poverty in Lao People's Democratic Republic\". I received the ProGIS Thesis Award for a meritorious thesis in 2016 in the field of geoinformatics.",
+        "end": "08/2016",
+        "org": "Aalto University",
+        "start": "07/2015",
+        "title": "Thesis research",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              102.665932,
+              17.805974
+            ],
+            [
+              102.802845,
+              17.926976
+            ],
+            [
+              103.037554,
+              17.992097
+            ],
+            [
+              103.076672,
+              18.094382
+            ],
+            [
+              103.145128,
+              18.178025
+            ],
+            [
+              103.291821,
+              18.298772
+            ],
+            [
+              103.32116,
+              18.419434
+            ],
+            [
+              103.790576,
+              18.326624
+            ],
+            [
+              103.995946,
+              18.280201
+            ],
+            [
+              104.338229,
+              17.796662
+            ],
+            [
+              104.563158,
+              17.591691
+            ],
+            [
+              104.788087,
+              17.405152
+            ],
+            [
+              104.758749,
+              17.087599
+            ],
+            [
+              104.748969,
+              16.778867
+            ],
+            [
+              104.73919,
+              16.535269
+            ],
+            [
+              104.925001,
+              16.310137
+            ],
+            [
+              105.159709,
+              16.056553
+            ],
+            [
+              105.355299,
+              15.877911
+            ],
+            [
+              105.428082,
+              15.746178
+            ],
+            [
+              105.635964,
+              15.7
+            ],
+            [
+              105.524028,
+              15.345624
+            ],
+            [
+              105.492046,
+              15.129621
+            ],
+            [
+              105.572001,
+              14.92885
+            ],
+            [
+              105.508037,
+              14.557703
+            ],
+            [
+              105.220199,
+              14.340911
+            ],
+            [
+              105.3961,
+              14.108401
+            ],
+            [
+              105.587991,
+              14.154922
+            ],
+            [
+              105.907811,
+              13.953262
+            ],
+            [
+              106.099702,
+              13.922222
+            ],
+            [
+              106.163666,
+              14.077382
+            ],
+            [
+              106.003757,
+              14.340911
+            ],
+            [
+              106.339567,
+              14.480302
+            ],
+            [
+              106.515468,
+              14.588656
+            ],
+            [
+              106.803305,
+              14.309924
+            ],
+            [
+              107.139115,
+              14.418361
+            ],
+            [
+              107.394971,
+              14.588656
+            ],
+            [
+              107.53889,
+              14.897945
+            ],
+            [
+              107.570872,
+              15.067866
+            ],
+            [
+              107.602854,
+              15.361045
+            ],
+            [
+              107.37898,
+              15.515184
+            ],
+            [
+              107.187088,
+              15.807732
+            ],
+            [
+              107.442944,
+              16.038393
+            ],
+            [
+              107.155106,
+              16.222729
+            ],
+            [
+              106.579432,
+              16.652176
+            ],
+            [
+              106.531459,
+              17.004218
+            ],
+            [
+              105.73191,
+              17.660603
+            ],
+            [
+              105.587991,
+              18.025925
+            ],
+            [
+              105.204208,
+              18.284237
+            ],
+            [
+              105.172226,
+              18.678559
+            ],
+            [
+              104.420651,
+              19.011502
+            ],
+            [
+              104.08484,
+              19.207929
+            ],
+            [
+              103.876958,
+              19.3136
+            ],
+            [
+              104.116822,
+              19.494592
+            ],
+            [
+              104.164795,
+              19.705493
+            ],
+            [
+              104.644524,
+              19.615141
+            ],
+            [
+              104.964344,
+              20.111446
+            ],
+            [
+              104.596551,
+              20.246531
+            ],
+            [
+              104.692497,
+              20.411475
+            ],
+            [
+              104.644524,
+              20.471411
+            ],
+            [
+              104.468624,
+              20.381498
+            ],
+            [
+              104.372678,
+              20.471411
+            ],
+            [
+              104.628533,
+              20.636114
+            ],
+            [
+              104.196777,
+              20.964985
+            ],
+            [
+              103.733039,
+              20.681003
+            ],
+            [
+              103.205337,
+              20.860422
+            ],
+            [
+              102.9175,
+              21.15898
+            ],
+            [
+              102.933491,
+              21.486698
+            ],
+            [
+              102.965473,
+              21.694864
+            ],
+            [
+              102.677635,
+              21.769136
+            ],
+            [
+              102.485744,
+              22.065839
+            ],
+            [
+              102.133942,
+              22.421062
+            ],
+            [
+              101.686195,
+              22.450623
+            ],
+            [
+              101.574258,
+              22.228761
+            ],
+            [
+              101.782141,
+              21.828526
+            ],
+            [
+              101.782141,
+              21.412281
+            ],
+            [
+              101.830114,
+              21.233525
+            ],
+            [
+              101.27043,
+              21.203712
+            ],
+            [
+              101.206466,
+              21.53133
+            ],
+            [
+              101.126511,
+              21.769136
+            ],
+            [
+              100.77471,
+              21.53133
+            ],
+            [
+              100.726737,
+              21.188803
+            ],
+            [
+              100.550836,
+              20.964985
+            ],
+            [
+              100.294981,
+              20.770739
+            ],
+            [
+              100.103089,
+              20.381498
+            ],
+            [
+              100.183044,
+              20.276534
+            ],
+            [
+              100.326963,
+              20.306531
+            ],
+            [
+              100.534845,
+              20.126461
+            ],
+            [
+              100.4389,
+              19.750651
+            ],
+            [
+              100.548203,
+              19.482379
+            ],
+            [
+              100.792691,
+              19.491598
+            ],
+            [
+              100.919825,
+              19.620613
+            ],
+            [
+              101.271887,
+              19.556118
+            ],
+            [
+              101.274531,
+              19.199064
+            ],
+            [
+              101.25854,
+              18.821093
+            ],
+            [
+              101.114621,
+              18.50294
+            ],
+            [
+              101.178585,
+              18.062612
+            ],
+            [
+              101.002684,
+              17.788748
+            ],
+            [
+              100.986693,
+              17.590695
+            ],
+            [
+              101.210567,
+              17.468708
+            ],
+            [
+              101.514395,
+              17.773521
+            ],
+            [
+              101.802233,
+              18.00179
+            ],
+            [
+              101.904916,
+              18.030723
+            ],
+            [
+              102.115922,
+              18.212343
+            ],
+            [
+              102.259246,
+              18.07993
+            ],
+            [
+              102.36873,
+              18.026937
+            ],
+            [
+              102.472242,
+              17.970141
+            ],
+            [
+              102.611585,
+              17.951205
+            ],
+            [
+              102.589688,
+              17.833756
+            ],
+            [
+              102.665932,
+              17.805974
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "119e3362a961645810d0287b2c859348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A one week long conference on sustainability arranged by the Baltic University Programme (a network of universities from the Baltic region).  The conference was held on board of STS Fryderyk Chopin, a 50-meter and 50-crew brig. The course started in Stavanger, Norway and ended in Belfast, Northern Ireland via Lerwick in the Shetland Islands.   I was invited on board as a watch leader taking care of a multinational crew of varying ages and backgrounds. Major part of the watch leader duty was to ensure that the watch in the bow functions well during sailing maneuvers and alarms.",
+        "end": "07/2015",
+        "org": "Baltic University",
+        "start": "07/2015",
+        "title": "SAIL for Teachers 2015",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          -1.136396,
+          60.134546
+        ],
+        "type": "Point"
+      },
+      "id": "141fda497d4f4dda7e59d7f46664e331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A semester long project work investigating the use of concrete pools to enhance biological productivity (biomass and species richness) of hard structure dykes.  The study site was located in the Eastern Scheldt in Ouwerkerk. Assignment included designing and implementing the experiment. We studied different materials commonly used to build dykes; concrete, limestone, granite and basalt.  Results suggest that the best material to build dykes (in these conditions and in terms of biological productivity) is limestone thanks to the porous surface. Limestone is slowly dissolved creating pores (and surface area) and ecological niches that are not present in other materials.",
+        "end": "12/2011",
+        "org": "HZ University of Applied Sciences",
+        "start": "09/2011",
+        "title": "Study of using pools to enhance the biological productivity of dykes",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          3.991194,
+          51.617775
+        ],
+        "type": "Point"
+      },
+      "id": "18583e81f93399bd691e60909c383dd8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Working at the dormitory at two locations. Main tasks were: ▪\tProviding assistance to the residents when needed  ▪\tTaking care of resident’s security ▪\tHotel manager/receptionist during school’s summer holidays  ▪\t3 months working as teacher’s assistant in the class room  ▪\t3 shift job from Nov 2005 to Dec 2007  ▪\tFull time night job since Jan 2008. ",
+        "end": "07/2016",
+        "org": "Invalidisäätiö / Keskuspuisto Vocational School ",
+        "start": "11/2005",
+        "title": "Nightwatch",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          24.908674,
+          60.201416
+        ],
+        "type": "Point"
+      },
+      "id": "1c2b8592a6c3e9c72888f55686b048c7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Determination of the state of River Guadalquivir",
+        "org": "HZ University of Applied Sciences",
+        "start": "09/2011",
+        "end": "09/2011",
+        "description": "One week intensive course/project in Sep 2011.  Students were divided in to 4 groups: Hydrology, Biology, Chemistry and Stakeholder. I was working with the Stakeholder group contacting, interviewing stakeholders (aquaculture, transport, farmers, local environmental experts) in the area.  The results were presented in the University of Cadíz to the university staff and local environmental officials.",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -6.38642,
+            36.784702
+          ],
+          [
+            -6.349137,
+            36.794299
+          ],
+          [
+            -6.341148,
+            36.803895
+          ],
+          [
+            -6.349137,
+            36.818819
+          ],
+          [
+            -6.357126,
+            36.836938
+          ],
+          [
+            -6.346474,
+            36.889139
+          ],
+          [
+            -6.341148,
+            36.896593
+          ],
+          [
+            -6.326501,
+            36.901917
+          ],
+          [
+            -6.293213,
+            36.908306
+          ],
+          [
+            -6.27324,
+            36.910435
+          ],
+          [
+            -6.265251,
+            36.898723
+          ],
+          [
+            -6.254598,
+            36.893399
+          ],
+          [
+            -6.241283,
+            36.893399
+          ],
+          [
+            -6.227968,
+            36.899788
+          ],
+          [
+            -6.213321,
+            36.908306
+          ],
+          [
+            -6.197343,
+            36.921081
+          ],
+          [
+            -6.185359,
+            36.941304
+          ],
+          [
+            -6.174707,
+            36.966841
+          ],
+          [
+            -6.168049,
+            36.987052
+          ],
+          [
+            -6.161391,
+            37.013637
+          ],
+          [
+            -6.156065,
+            37.022142
+          ],
+          [
+            -6.144081,
+            37.028521
+          ],
+          [
+            -6.116119,
+            37.035961
+          ],
+          [
+            -6.097478,
+            37.049778
+          ],
+          [
+            -6.089489,
+            37.064654
+          ],
+          [
+            -6.085494,
+            37.079528
+          ],
+          [
+            -6.088157,
+            37.094398
+          ],
+          [
+            -6.085494,
+            37.105019
+          ],
+          [
+            -6.08948,
+            37.120038
+          ],
+          [
+            -6.101551,
+            37.151961
+          ],
+          [
+            -6.105673,
+            37.166509
+          ],
+          [
+            -6.104201,
+            37.172374
+          ],
+          [
+            -6.103024,
+            37.183635
+          ],
+          [
+            -6.095663,
+            37.19677
+          ],
+          [
+            -6.088008,
+            37.204978
+          ],
+          [
+            -6.080058,
+            37.211309
+          ],
+          [
+            -6.069458,
+            37.219047
+          ],
+          [
+            -6.065631,
+            37.228425
+          ],
+          [
+            -6.062392,
+            37.239443
+          ],
+          [
+            -6.062392,
+            37.251865
+          ],
+          [
+            -6.060037,
+            37.262176
+          ],
+          [
+            -6.052087,
+            37.273657
+          ],
+          [
+            -6.049143,
+            37.279749
+          ],
+          [
+            -6.046493,
+            37.287245
+          ],
+          [
+            -6.044432,
+            37.294038
+          ],
+          [
+            -6.040015,
+            37.297786
+          ],
+          [
+            -6.031771,
+            37.300596
+          ],
+          [
+            -6.022938,
+            37.308091
+          ],
+          [
+            -6.016166,
+            37.31535
+          ],
+          [
+            -6.014105,
+            37.321907
+          ],
+          [
+            -6.014694,
+            37.327292
+          ],
+          [
+            -6.018522,
+            37.331974
+          ],
+          [
+            -6.022055,
+            37.339699
+          ],
+          [
+            -6.022621,
+            37.364481
+          ],
+          [
+            -6.022621,
+            37.372203
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "21bb60676d9218a85eb1d53f64942114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Working in two professional fairs in customer service and information desk. Short term job in 2004.",
+        "end": "10/2004",
+        "org": "BBM Oy",
+        "start": "10/2004",
+        "title": "Fair assistant",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          24.935376,
+          60.203056
+        ],
+        "type": "Point"
+      },
+      "id": "2390b2e1bdc382f95fb3e2c4e719d13a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Geoinformatics is a field that combines geography, cartography and computing.   In addition to studying these fields, I have been taking courses in water resources management (and related computational methods), information visualization and Asian studies. My Master's thesis titled \"An exploration of water poverty in Lao People's Democratic Republic' received the ProGIS Thesis Award for a meritorious thesis in 2016.",
+        "end": "11/2016",
+        "org": "Aalto University",
+        "start": "09/2014",
+        "title": "Master's in Geoinformatics",
+        "type": "edu"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.80741,
+              60.1893
+            ],
+            [
+              24.832711,
+              60.194185
+            ],
+            [
+              24.841677,
+              60.193574
+            ],
+            [
+              24.842782,
+              60.187835
+            ],
+            [
+              24.837133,
+              60.180507
+            ],
+            [
+              24.833202,
+              60.179469
+            ],
+            [
+              24.826447,
+              60.178858
+            ],
+            [
+              24.823499,
+              60.179407
+            ],
+            [
+              24.816867,
+              60.181789
+            ],
+            [
+              24.812937,
+              60.183744
+            ],
+            [
+              24.809989,
+              60.186003
+            ],
+            [
+              24.80741,
+              60.1893
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "2544934c84b9aa641f7f1b4ca261ff0d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A semester long project work investigating the use of concrete pools to enhance biological productivity (biomass and species richness) of hard structure dykes.  The study site was located in the Eastern Scheldt in Ouwerkerk. Assignment included designing and implementing the experiment. We studied different materials commonly used to build dykes; concrete, limestone, granite and basalt.  Results suggest that the best material to build dykes (in these conditions and in terms of biological productivity) is limestone thanks to the porous surface. Limestone is slowly dissolved creating pores (and surface area) and ecological niches that are not present in other materials.",
+        "end": "12/2011",
+        "org": "HZ University of Applied Sciences",
+        "start": "09/2011",
+        "title": "Study of using pools to enhance the biological productivity of dykes",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              3.990484,
+              51.617404
+            ],
+            [
+              3.991532,
+              51.618067
+            ],
+            [
+              3.991655,
+              51.618004
+            ],
+            [
+              3.990607,
+              51.617327
+            ],
+            [
+              3.990484,
+              51.617404
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "27b6ece3a1d5708936c0cda8cd80162a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "I worked as a Trainee in Nautical Chart production team. Job included GIS analysis, database quality checks and corrections, preparing new Electronic Nautical Charts for production, data transfer between old and new systems and testing a potential new production system (CARIS).",
+        "end": "12/2016",
+        "org": "Finnish Transport Agency",
+        "start": "06/2016",
+        "title": "Trainee",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          24.936835,
+          60.199383
+        ],
+        "type": "Point"
+      },
+      "id": "2fa3fd5a66858251f4cf5c92ff7148a5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The internship was to work in business-to-business sales with web pages as the product. This was a small one-man company based in Itäkeskus, Helsinki.",
+        "end": "12/2004",
+        "org": "Business Information Services Oy",
+        "start": "11/2004",
+        "title": "Sales Intern",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              25.079067,
+              60.209766
+            ],
+            [
+              25.078533,
+              60.210228
+            ],
+            [
+              25.080763,
+              60.210793
+            ],
+            [
+              25.080438,
+              60.211151
+            ],
+            [
+              25.081042,
+              60.211417
+            ],
+            [
+              25.082435,
+              60.212455
+            ],
+            [
+              25.083179,
+              60.213101
+            ],
+            [
+              25.084967,
+              60.213644
+            ],
+            [
+              25.085548,
+              60.213378
+            ],
+            [
+              25.085711,
+              60.212998
+            ],
+            [
+              25.085316,
+              60.212398
+            ],
+            [
+              25.08276,
+              60.210805
+            ],
+            [
+              25.082296,
+              60.21062
+            ],
+            [
+              25.079067,
+              60.209766
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "3eb4cf04e6f07cefd60895f89c1a9dd0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A one week long conference on sustainability arranged by the Baltic University Programme (a network of universities from the Baltic region).  The conference was held on board of STS Fryderyk Chopin, a 50-meter and 50-crew brig. The course started in Stavanger, Norway and ended in Belfast, Northern Ireland via Lerwick in the Shetland Islands.   I was invited on board as a watch leader taking care of a multinational crew of varying ages and backgrounds. Major part of the watch leader duty was to ensure that the watch in the bow functions well during sailing maneuvers and alarms.",
+        "end": "06/2016",
+        "org": "Baltic University",
+        "start": "06/2016",
+        "title": "SAIL for Teachers 2016",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          5.810139,
+          56.498779
+        ],
+        "type": "Point"
+      },
+      "id": "3ffdef532e0e094856d14e550112dc4a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Working at the dormitory at two locations. Main tasks were: ▪\tProviding assistance to the residents when needed  ▪\tTaking care of resident’s security ▪\tHotel manager/receptionist during school’s summer holidays  ▪\t3 months working as teacher’s assistant in the class room  ▪\t3 shift job from Nov 2005 to Dec 2007  ▪\tFull time night job since Jan 2008. ",
+        "end": "07/2016",
+        "org": "Invalidisäätiö / Keskuspuisto Vocational School ",
+        "start": "11/2005",
+        "title": "Nightwatch",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.829282,
+              60.221923
+            ],
+            [
+              24.830225,
+              60.221596
+            ],
+            [
+              24.829622,
+              60.221155
+            ],
+            [
+              24.826604,
+              60.220902
+            ],
+            [
+              24.826585,
+              60.220284
+            ],
+            [
+              24.825189,
+              60.220275
+            ],
+            [
+              24.824454,
+              60.220902
+            ],
+            [
+              24.824529,
+              60.221277
+            ],
+            [
+              24.825189,
+              60.221699
+            ],
+            [
+              24.829282,
+              60.221923
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "41820991785b8acb1a73bd4fc9a07210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A 2-day measurement campaign to determine water quality of River Scheldt.   The survey was conducted from the border between France and Belgium to the mouth of Western Scheldt near Antwerp. River was sampled in more than 10 stations.  The report was handed to the officials of the Netherlands and Belgium.",
+        "end": "03/2012",
+        "org": "HZ University of Applied Sciences",
+        "start": "03/2012",
+        "title": "Water quality survey of River Scheldt",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          3.865317,
+          51.002735
+        ],
+        "type": "Point"
+      },
+      "id": "4a4cd836e8186e42f9144ed06c899472"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A 4-day campaing in May 2012 to sample, analyze and determine the ecological status according to the Water Framework Directive.  Sampling and analysis included sediments, water quality and biology (indicator species).",
+        "end": "05/2012",
+        "org": "HZ University of Applied Sciences",
+        "start": "05/2012",
+        "title": "Determining the ecological status of Eastern Scheldt, Volkerak and Steenbergse Vliet",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          4.097862,
+          51.65871
+        ],
+        "type": "Point"
+      },
+      "id": "597e7548f382096561d8f9ec0f6c9625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Salesperson at sports department. Main tasks were: ▪\tSales & customer service ▪\tTaking care of sports department’s warehouse area ▪\tWorking as cashier.",
+        "end": "09/2005",
+        "org": "Anttila Myyrmanni Oy",
+        "start": "02/2005",
+        "title": "Salesperson",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          24.85315,
+          60.260236
+        ],
+        "type": "Point"
+      },
+      "id": "5d0242a26b7ec1c39412fe3e9942f4fd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A one week long conference on sustainability arranged by the Baltic University Programme (a network of universities from the Baltic region).  The conference was held on board of STS Fryderyk Chopin, a 50-meter and 50-crew brig. The course started in Stavanger, Norway and ended in Belfast, Northern Ireland via Lerwick in the Shetland Islands.   I was invited on board as a watch leader taking care of a multinational crew of varying ages and backgrounds. Major part of the watch leader duty was to ensure that the watch in the bow functions well during sailing maneuvers and alarms.",
+        "end": "07/2015",
+        "org": "Baltic University",
+        "start": "07/2015",
+        "title": "SAIL for Teachers 2015",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            5.736667,
+            58.973342
+          ],
+          [
+            5.728931,
+            58.977327
+          ],
+          [
+            5.72101,
+            58.981589
+          ],
+          [
+            5.679305,
+            59.011508
+          ],
+          [
+            5.64987,
+            59.027004
+          ],
+          [
+            5.550864,
+            59.062101
+          ],
+          [
+            5.498016,
+            59.090635
+          ],
+          [
+            5.176247,
+            59.103003
+          ],
+          [
+            -0.449645,
+            59.991439
+          ],
+          [
+            -1.088246,
+            60.094641
+          ],
+          [
+            -1.131529,
+            60.117873
+          ],
+          [
+            -1.130863,
+            60.139099
+          ],
+          [
+            -1.123538,
+            60.150369
+          ],
+          [
+            -1.133192,
+            60.15647
+          ],
+          [
+            -1.141482,
+            60.155688
+          ],
+          [
+            -1.141867,
+            60.154687
+          ],
+          [
+            -1.141211,
+            60.154725
+          ],
+          [
+            -1.141489,
+            60.155013
+          ],
+          [
+            -1.141085,
+            60.155252
+          ],
+          [
+            -1.131278,
+            60.153445
+          ],
+          [
+            -1.128914,
+            60.147658
+          ],
+          [
+            -1.136396,
+            60.134546
+          ],
+          [
+            -1.140835,
+            60.105651
+          ],
+          [
+            -1.130421,
+            59.989794
+          ],
+          [
+            -1.213023,
+            59.822194
+          ],
+          [
+            -1.368622,
+            59.798045
+          ],
+          [
+            -3.512417,
+            60.18808
+          ],
+          [
+            -5.383229,
+            58.615727
+          ],
+          [
+            -6.346981,
+            57.794358
+          ],
+          [
+            -6.877296,
+            57.557597
+          ],
+          [
+            -7.146153,
+            56.70418
+          ],
+          [
+            -7.115716,
+            56.295404
+          ],
+          [
+            -6.664239,
+            55.633877
+          ],
+          [
+            -6.045361,
+            55.334943
+          ],
+          [
+            -5.598956,
+            54.949414
+          ],
+          [
+            -5.614175,
+            54.753749
+          ],
+          [
+            -5.836368,
+            54.657094
+          ],
+          [
+            -5.877165,
+            54.63604
+          ],
+          [
+            -5.894132,
+            54.622787
+          ],
+          [
+            -5.903997,
+            54.615994
+          ],
+          [
+            -5.906435,
+            54.61545
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "6051fcbc7c64fa75819a270970b6a712"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The project tasks included among others: ▪\tGIS based modelling of sediments and phosphorus in rivers and reservoirs ▪\tCalibration of the model ▪\tLiterature study of reservoirs and impacts of mining and dams on water quality  The project was funded by Challenge Program on Food and Water Opportunity Funds. Project was supervised by Juha Sarkkula and technical help was provided by Jorma Koponen (Environmental Impact Assessment Finland Ltd).  My Bachelor's Thesis was written about this project and it can be found here: Effects of Mining and Hydropower on Metals in Surface Waters : Case: Nam Ngum  Note: Although the project is marked here, the entire work was done from Finland because at the time of the work, no chance to visit Laos occurred. The area denotes the extent of Nam Ngum Wateshed.",
+        "end": "03/2014",
+        "org": "",
+        "start": "07/2013",
+        "title": "Water quality study of River Nam Ngum in Laos",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              103.34276,
+              19.710098
+            ],
+            [
+              103.39403,
+              19.585712
+            ],
+            [
+              103.327867,
+              19.449153
+            ],
+            [
+              103.204245,
+              19.356296
+            ],
+            [
+              103.087845,
+              19.320301
+            ],
+            [
+              103.005816,
+              19.252363
+            ],
+            [
+              103.065784,
+              19.128808
+            ],
+            [
+              103.117647,
+              18.996309
+            ],
+            [
+              103.160976,
+              18.888656
+            ],
+            [
+              103.219946,
+              18.803506
+            ],
+            [
+              103.153733,
+              18.747925
+            ],
+            [
+              103.134413,
+              18.632126
+            ],
+            [
+              103.134075,
+              18.531992
+            ],
+            [
+              103.020695,
+              18.500814
+            ],
+            [
+              102.86694,
+              18.508973
+            ],
+            [
+              102.74157,
+              18.427073
+            ],
+            [
+              102.848416,
+              18.31247
+            ],
+            [
+              103.020675,
+              18.241243
+            ],
+            [
+              103.092939,
+              18.132391
+            ],
+            [
+              102.992091,
+              18.049287
+            ],
+            [
+              102.855185,
+              18.051431
+            ],
+            [
+              102.650518,
+              18.058895
+            ],
+            [
+              102.462181,
+              18.028698
+            ],
+            [
+              102.30314,
+              18.113635
+            ],
+            [
+              102.263387,
+              18.328556
+            ],
+            [
+              102.266659,
+              18.425513
+            ],
+            [
+              102.273392,
+              18.544237
+            ],
+            [
+              102.112836,
+              18.535447
+            ],
+            [
+              101.929953,
+              18.536006
+            ],
+            [
+              101.913403,
+              18.661895
+            ],
+            [
+              101.970734,
+              18.780746
+            ],
+            [
+              102.03768,
+              18.885336
+            ],
+            [
+              102.031478,
+              19.056333
+            ],
+            [
+              102.119104,
+              19.185745
+            ],
+            [
+              102.182745,
+              19.368211
+            ],
+            [
+              102.375093,
+              19.413172
+            ],
+            [
+              102.526724,
+              19.45729
+            ],
+            [
+              102.680243,
+              19.518033
+            ],
+            [
+              102.81798,
+              19.613159
+            ],
+            [
+              103.021514,
+              19.666008
+            ],
+            [
+              103.218342,
+              19.755391
+            ],
+            [
+              103.34276,
+              19.710098
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "619d07150e2b175877432dce75ee361c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Determination of the state of River Guadalquivir",
+        "org": "HZ University of Applied Sciences",
+        "start": "09/2011",
+        "end": "09/2011",
+        "description": "One week intensive course/project in Sep 2011.  Students were divided in to 4 groups: Hydrology, Biology, Chemistry and Stakeholder. I was working with the Stakeholder group contacting, interviewing stakeholders (aquaculture, transport, farmers, local environmental experts) in the area.  The results were presented in the University of Cadíz to the university staff and local environmental officials.",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          -6.104201,
+          37.172374
+        ],
+        "type": "Point"
+      },
+      "id": "6759f24814b144a779a5afc39e2f6990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Studies included: ▪\tAccounting ▪\tAdministration ▪\tCustomer service ▪\tMinor in sales and marketing",
+        "end": "06/2005",
+        "org": "Helsinki Business College",
+        "start": "08/2000",
+        "title": "Vocational Education in Business and Administration",
+        "type": "edu"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.935091,
+              60.201349
+            ],
+            [
+              24.936016,
+              60.201444
+            ],
+            [
+              24.935613,
+              60.202268
+            ],
+            [
+              24.934712,
+              60.202162
+            ],
+            [
+              24.935091,
+              60.201349
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "6aa61011259ba140cd7e5e1a2a5e504c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Nam Xong is a tributary of Nam Ngum which I studied for my Bachelor's thesis. Modelling for the Ministry of Natural Resources and Environment of Laos included modelling of hydrology and water quality in the Nam Xong sub-basin. In addition, I provided training and capacity building on modelling for the national water professionals in the Department of Water Resources and National Economic Research Institute.   This work is funded by the DWR and Mekong Region Futures Institute and it includes both off-site and on-site work in Vientiane, Laos.",
+        "end": "05/2016",
+        "org": "Ministry of Natural Resources and Environment of Lao PDR",
+        "start": "05/2015",
+        "title": "Expert Modeller",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          102.446679,
+          18.925562
+        ],
+        "type": "Point"
+      },
+      "id": "708d72397cce4e414505bbfb0ce129ec"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A 2-week intensive course on sustainability arranged by the Baltic University (a network of universities from the Baltic region).  The course was held on board of STS Fryderyk Chopin, a 50-meter and 50-crew sailing boat. The course started in Sczeczin, Poland and ended in Bergen, Norway. During the trip we also harboured in Helsingor (Denmark), Stavanger and Maloy (Norway). The crew consisted of participants from all over the Baltic Sea region and were from a varied background.   The course itself offered a wide perspective on sustainability issues in the countries of the Baltic Sea and more importantly, the prespective from professionals from different fields than mine.  At the end of the course i was invited for a Watch Leader training in summers of 2014 and 2015 for showing leadership and setting an example during the SAIL.",
+        "end": "08/2013",
+        "org": "Baltic University",
+        "start": "08/2013",
+        "title": "SAIL - Sustainability in International Learning 2013",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          12.620757,
+          56.03461
+        ],
+        "type": "Point"
+      },
+      "id": "736b67ff15fd85f8bb99743d70a4b1c7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A summer job to create product information web pages for internal use. TeliaSonera is one of the largest biggest telecommunications service providers in the Nordic countries.",
+        "end": "07/2003",
+        "org": "Sonera Oyj ",
+        "start": "06/2003",
+        "title": "Summer Intern",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          24.95086,
+          60.193286
+        ],
+        "type": "Point"
+      },
+      "id": "73cb515edb96f2c268792e823aed303d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Nam Xong is a tributary of Nam Ngum which I studied for my Bachelor's thesis. Modelling for the Ministry of Natural Resources and Environment of Laos included modelling of hydrology and water quality in the Nam Xong sub-basin. In addition, I provided training and capacity building on modelling for the national water professionals in the Department of Water Resources and National Economic Research Institute.   This work is funded by the DWR and Mekong Region Futures Institute and it includes both off-site and on-site work in Vientiane, Laos.",
+        "end": "05/2016",
+        "org": "Ministry of Natural Resources and Environment of Lao PDR",
+        "start": "05/2015",
+        "title": "Expert Modeller",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              102.32872,
+              18.639088
+            ],
+            [
+              102.438583,
+              18.719097
+            ],
+            [
+              102.448883,
+              18.803618
+            ],
+            [
+              102.613677,
+              18.825066
+            ],
+            [
+              102.586898,
+              18.927721
+            ],
+            [
+              102.519607,
+              18.937464
+            ],
+            [
+              102.611618,
+              19.052382
+            ],
+            [
+              102.603378,
+              19.149708
+            ],
+            [
+              102.549133,
+              19.227528
+            ],
+            [
+              102.502441,
+              19.29883
+            ],
+            [
+              102.402877,
+              19.222989
+            ],
+            [
+              102.319793,
+              19.095862
+            ],
+            [
+              102.31842,
+              18.965065
+            ],
+            [
+              102.30812,
+              18.915055
+            ],
+            [
+              102.260055,
+              18.88095
+            ],
+            [
+              102.245635,
+              18.802968
+            ],
+            [
+              102.312927,
+              18.768514
+            ],
+            [
+              102.323913,
+              18.685276
+            ],
+            [
+              102.290267,
+              18.65828
+            ],
+            [
+              102.301597,
+              18.639738
+            ],
+            [
+              102.32872,
+              18.639088
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "7616d7687382dd4be84ee95e8467285b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Salesperson at sports department. Main tasks were: ▪\tSales & customer service ▪\tTaking care of sports department’s warehouse area ▪\tWorking as cashier.",
+        "end": "09/2005",
+        "org": "Anttila Myyrmanni Oy",
+        "start": "02/2005",
+        "title": "Salesperson",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.854624,
+              60.259402
+            ],
+            [
+              24.854501,
+              60.261013
+            ],
+            [
+              24.851602,
+              60.260953
+            ],
+            [
+              24.85162,
+              60.260814
+            ],
+            [
+              24.851812,
+              60.260796
+            ],
+            [
+              24.85182,
+              60.260683
+            ],
+            [
+              24.852074,
+              60.259861
+            ],
+            [
+              24.852108,
+              60.259645
+            ],
+            [
+              24.852143,
+              60.25935
+            ],
+            [
+              24.853226,
+              60.25935
+            ],
+            [
+              24.854624,
+              60.259402
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "7823ea73dc42b59c8db4ddab84963cc3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The job consisted mainly of taking care of public court yards and doing minor repairs in apartment buildings . The work was mobile and areas included apartment compounds in Malminkartano and Konala.",
+        "end": "07/2004",
+        "org": "Malminkartanon Kiinteistöt Oy",
+        "start": "06/1999",
+        "title": "5 x Summer Intern",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          24.859125,
+          60.247652
+        ],
+        "type": "Point"
+      },
+      "id": "7e0d3f32a5c36119ad60d02d155b13b1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The internship was to work in business-to-business sales with web pages as the product. This was a small one-man company based in Itäkeskus, Helsinki.",
+        "end": "12/2004",
+        "org": "Business Information Services Oy",
+        "start": "11/2004",
+        "title": "Sales Intern",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          25.083244,
+          60.212092
+        ],
+        "type": "Point"
+      },
+      "id": "89cb9fbdde2c141febdc931d2753287d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Two semester exchange studies in 2011-2012.  ▪\t(Aquatic) Ecology ▪\tDredging ▪\tWater system analysis ▪\tRiver basin management ▪\tIWRM ▪\tAquaculture ▪\tEcological engineering  Exchange included also a one-week project work determining the state of River Guadalquivir in Andalucia, Spain.",
+        "end": "06/2012",
+        "org": "HZ University of Applied Sciences",
+        "start": "09/2011",
+        "title": "Erasmus exchange / International Water Management",
+        "type": "edu"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              3.590875,
+              51.448946
+            ],
+            [
+              3.591207,
+              51.449866
+            ],
+            [
+              3.590031,
+              51.450148
+            ],
+            [
+              3.590122,
+              51.450411
+            ],
+            [
+              3.588856,
+              51.450618
+            ],
+            [
+              3.588434,
+              51.450167
+            ],
+            [
+              3.588524,
+              51.449678
+            ],
+            [
+              3.589006,
+              51.449434
+            ],
+            [
+              3.5897,
+              51.449321
+            ],
+            [
+              3.589579,
+              51.449058
+            ],
+            [
+              3.590815,
+              51.448871
+            ],
+            [
+              3.590875,
+              51.448946
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "8d3f01ed67b871456d08696ad9d6e4b5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The project tasks included among others: ▪\tGIS based modelling of sediments and phosphorus in rivers and reservoirs ▪\tCalibration of the model ▪\tLiterature study of reservoirs and impacts of mining and dams on water quality  The project was funded by Challenge Program on Food and Water Opportunity Funds. Project was supervised by Juha Sarkkula and technical help was provided by Jorma Koponen (Environmental Impact Assessment Finland Ltd).  My Bachelor's Thesis was written about this project and it can be found here: Effects of Mining and Hydropower on Metals in Surface Waters : Case: Nam Ngum  Note: Although the project is marked here, the entire work was done from Finland because at the time of the work, no chance to visit Laos occurred. The area denotes the extent of Nam Ngum Wateshed.",
+        "end": "03/2014",
+        "org": "",
+        "start": "07/2013",
+        "title": "Water quality study of River Nam Ngum in Laos",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          102.546986,
+          18.530702
+        ],
+        "type": "Point"
+      },
+      "id": "8f434c32cd04deb9b0649c9ed1239e78"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "I am working on multidisciplinary PhD research in Geoinformatics and Water and Development studies. I work to improve impact assessments of water scarcity in data poor regions. In other words, I try to combine data from multiple spatial and temporal scales by exploratory and data mining methods. Dissertation should be finished in Autumn 2020. ",
+        "end": "",
+        "org": "Aalto University",
+        "start": "01/2017",
+        "title": "Researcher / PhD candidate",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          24.820496,
+          60.186178
+        ],
+        "type": "Point"
+      },
+      "id": "905af474d7add271da3271dc05c4b773"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Thesis research on water poverty in Lao PDR using exploratory and data mining methods. The final thesis is titled \"An exploration of water poverty in Lao People's Democratic Republic\". I received the ProGIS Thesis Award for a meritorious thesis in 2016 in the field of geoinformatics.",
+        "end": "08/2016",
+        "org": "Aalto University",
+        "start": "07/2015",
+        "title": "Thesis research",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          105.302236,
+          17.254376
+        ],
+        "type": "Point"
+      },
+      "id": "a2590801f2f292468c641137bb17d5ce"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A 2-day measurement campaign to determine water quality of River Scheldt.   The survey was conducted from the border between France and Belgium to the mouth of Western Scheldt near Antwerp. River was sampled in more than 10 stations.  The report was handed to the officials of the Netherlands and Belgium.",
+        "end": "03/2012",
+        "org": "HZ University of Applied Sciences",
+        "start": "03/2012",
+        "title": "Water quality survey of River Scheldt",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            4.213054,
+            51.387765
+          ],
+          [
+            4.235932,
+            51.35512
+          ],
+          [
+            4.270249,
+            51.332663
+          ],
+          [
+            4.275152,
+            51.302022
+          ],
+          [
+            4.31764,
+            51.28976
+          ],
+          [
+            4.319274,
+            51.282605
+          ],
+          [
+            4.299664,
+            51.263181
+          ],
+          [
+            4.307835,
+            51.254999
+          ],
+          [
+            4.332347,
+            51.249885
+          ],
+          [
+            4.351957,
+            51.240679
+          ],
+          [
+            4.392528,
+            51.238362
+          ],
+          [
+            4.397525,
+            51.232104
+          ],
+          [
+            4.386531,
+            51.212701
+          ],
+          [
+            4.35555,
+            51.202057
+          ],
+          [
+            4.336562,
+            51.193289
+          ],
+          [
+            4.328566,
+            51.181388
+          ],
+          [
+            4.328566,
+            51.161336
+          ],
+          [
+            4.327567,
+            51.145664
+          ],
+          [
+            4.324569,
+            51.135005
+          ],
+          [
+            4.317573,
+            51.127479
+          ],
+          [
+            4.300583,
+            51.124343
+          ],
+          [
+            4.283594,
+            51.124343
+          ],
+          [
+            4.268603,
+            51.119952
+          ],
+          [
+            4.253612,
+            51.116188
+          ],
+          [
+            4.238621,
+            51.116188
+          ],
+          [
+            4.22263,
+            51.121206
+          ],
+          [
+            4.209638,
+            51.119952
+          ],
+          [
+            4.199644,
+            51.114306
+          ],
+          [
+            4.188651,
+            51.106149
+          ],
+          [
+            4.175658,
+            51.101756
+          ],
+          [
+            4.171661,
+            51.093597
+          ],
+          [
+            4.174659,
+            51.088575
+          ],
+          [
+            4.186651,
+            51.084181
+          ],
+          [
+            4.18965,
+            51.078531
+          ],
+          [
+            4.186651,
+            51.066599
+          ],
+          [
+            4.186366,
+            51.060395
+          ],
+          [
+            4.198645,
+            51.057
+          ],
+          [
+            4.199627,
+            51.054376
+          ],
+          [
+            4.192014,
+            51.049282
+          ],
+          [
+            4.187103,
+            51.047121
+          ],
+          [
+            4.188332,
+            51.042335
+          ],
+          [
+            4.190296,
+            51.037549
+          ],
+          [
+            4.18784,
+            51.032298
+          ],
+          [
+            4.182193,
+            51.032607
+          ],
+          [
+            4.176053,
+            51.032453
+          ],
+          [
+            4.167951,
+            51.037394
+          ],
+          [
+            4.164022,
+            51.040791
+          ],
+          [
+            4.159848,
+            51.046966
+          ],
+          [
+            4.157146,
+            51.050054
+          ],
+          [
+            4.152726,
+            51.050363
+          ],
+          [
+            4.150515,
+            51.05098
+          ],
+          [
+            4.151252,
+            51.052369
+          ],
+          [
+            4.155673,
+            51.052987
+          ],
+          [
+            4.157146,
+            51.054839
+          ],
+          [
+            4.155673,
+            51.056537
+          ],
+          [
+            4.153218,
+            51.057771
+          ],
+          [
+            4.149534,
+            51.057
+          ],
+          [
+            4.14536,
+            51.056228
+          ],
+          [
+            4.139712,
+            51.057308
+          ],
+          [
+            4.135047,
+            51.058543
+          ],
+          [
+            4.133082,
+            51.057617
+          ],
+          [
+            4.13259,
+            51.054685
+          ],
+          [
+            4.131363,
+            51.051289
+          ],
+          [
+            4.126698,
+            51.047275
+          ],
+          [
+            4.128171,
+            51.043879
+          ],
+          [
+            4.125961,
+            51.042026
+          ],
+          [
+            4.120803,
+            51.039865
+          ],
+          [
+            4.108772,
+            51.03724
+          ],
+          [
+            4.105335,
+            51.034615
+          ],
+          [
+            4.101651,
+            51.034306
+          ],
+          [
+            4.098213,
+            51.036159
+          ],
+          [
+            4.095758,
+            51.040173
+          ],
+          [
+            4.093548,
+            51.042489
+          ],
+          [
+            4.088883,
+            51.044805
+          ],
+          [
+            4.089619,
+            51.046966
+          ],
+          [
+            4.08839,
+            51.048356
+          ],
+          [
+            4.084463,
+            51.049436
+          ],
+          [
+            4.080288,
+            51.049591
+          ],
+          [
+            4.073413,
+            51.050363
+          ],
+          [
+            4.069975,
+            51.049128
+          ],
+          [
+            4.06801,
+            51.048819
+          ],
+          [
+            4.065309,
+            51.049899
+          ],
+          [
+            4.060152,
+            51.048973
+          ],
+          [
+            4.055242,
+            51.047275
+          ],
+          [
+            4.049102,
+            51.043724
+          ],
+          [
+            4.04542,
+            51.03971
+          ],
+          [
+            4.044437,
+            51.037085
+          ],
+          [
+            4.041,
+            51.03585
+          ],
+          [
+            4.040508,
+            51.033225
+          ],
+          [
+            4.041245,
+            51.029673
+          ],
+          [
+            4.040508,
+            51.027048
+          ],
+          [
+            4.041982,
+            51.022414
+          ],
+          [
+            4.040753,
+            51.019325
+          ],
+          [
+            4.039281,
+            51.01778
+          ],
+          [
+            4.032896,
+            51.015
+          ],
+          [
+            4.026757,
+            51.012064
+          ],
+          [
+            4.022092,
+            51.010365
+          ],
+          [
+            4.01939,
+            51.007584
+          ],
+          [
+            4.016444,
+            51.006502
+          ],
+          [
+            4.010797,
+            51.005266
+          ],
+          [
+            4.002693,
+            51.004803
+          ],
+          [
+            3.996554,
+            51.003721
+          ],
+          [
+            3.991152,
+            51.003876
+          ],
+          [
+            3.985013,
+            51.003258
+          ],
+          [
+            3.97249,
+            51.009902
+          ],
+          [
+            3.97249,
+            51.012528
+          ],
+          [
+            3.974209,
+            51.015927
+          ],
+          [
+            3.972981,
+            51.018244
+          ],
+          [
+            3.967334,
+            51.02087
+          ],
+          [
+            3.964387,
+            51.021333
+          ],
+          [
+            3.961686,
+            51.020097
+          ],
+          [
+            3.961195,
+            51.017162
+          ],
+          [
+            3.960704,
+            51.014073
+          ],
+          [
+            3.957266,
+            51.011137
+          ],
+          [
+            3.956038,
+            51.008511
+          ],
+          [
+            3.950636,
+            51.006966
+          ],
+          [
+            3.948671,
+            51.005266
+          ],
+          [
+            3.946461,
+            51.004803
+          ],
+          [
+            3.942778,
+            51.006811
+          ],
+          [
+            3.936148,
+            51.010365
+          ],
+          [
+            3.931728,
+            51.012837
+          ],
+          [
+            3.926572,
+            51.015927
+          ],
+          [
+            3.923379,
+            51.017008
+          ],
+          [
+            3.918468,
+            51.017008
+          ],
+          [
+            3.911753,
+            51.015772
+          ],
+          [
+            3.905847,
+            51.014114
+          ],
+          [
+            3.899395,
+            51.013142
+          ],
+          [
+            3.89476,
+            51.010798
+          ],
+          [
+            3.892852,
+            51.01034
+          ],
+          [
+            3.887308,
+            51.010111
+          ],
+          [
+            3.884764,
+            51.008854
+          ],
+          [
+            3.880311,
+            51.008511
+          ],
+          [
+            3.87713,
+            51.007481
+          ],
+          [
+            3.870315,
+            51.005023
+          ],
+          [
+            3.865317,
+            51.002735
+          ],
+          [
+            3.861682,
+            51.001992
+          ],
+          [
+            3.857593,
+            51.001935
+          ],
+          [
+            3.854685,
+            51.000791
+          ],
+          [
+            3.850777,
+            50.997874
+          ],
+          [
+            3.846415,
+            50.995701
+          ],
+          [
+            3.842053,
+            50.994214
+          ],
+          [
+            3.8376,
+            50.993356
+          ],
+          [
+            3.832511,
+            50.993127
+          ],
+          [
+            3.828604,
+            50.994099
+          ],
+          [
+            3.82406,
+            50.996158
+          ],
+          [
+            3.82097,
+            50.997531
+          ],
+          [
+            3.81879,
+            50.998961
+          ],
+          [
+            3.815155,
+            51.000219
+          ],
+          [
+            3.80743,
+            51.002964
+          ],
+          [
+            3.804613,
+            51.005137
+          ],
+          [
+            3.80116,
+            51.007024
+          ],
+          [
+            3.79859,
+            51.007597
+          ],
+          [
+            3.791622,
+            51.007472
+          ],
+          [
+            3.782861,
+            51.007159
+          ],
+          [
+            3.775395,
+            51.006344
+          ],
+          [
+            3.769721,
+            51.005029
+          ],
+          [
+            3.76544,
+            51.004653
+          ],
+          [
+            3.757874,
+            51.005718
+          ],
+          [
+            3.751404,
+            51.007221
+          ],
+          [
+            3.748915,
+            51.007785
+          ],
+          [
+            3.746725,
+            51.007472
+          ],
+          [
+            3.745928,
+            51.006657
+          ],
+          [
+            3.745729,
+            51.00553
+          ],
+          [
+            3.746028,
+            51.004027
+          ],
+          [
+            3.745431,
+            51.002711
+          ],
+          [
+            3.743937,
+            51.001521
+          ],
+          [
+            3.739259,
+            51.001709
+          ],
+          [
+            3.733783,
+            51.002774
+          ],
+          [
+            3.730896,
+            51.003087
+          ],
+          [
+            3.727014,
+            51.001959
+          ],
+          [
+            3.724625,
+            51.000017
+          ],
+          [
+            3.72353,
+            50.997824
+          ],
+          [
+            3.724326,
+            50.995068
+          ],
+          [
+            3.724426,
+            50.993501
+          ],
+          [
+            3.72353,
+            50.991621
+          ],
+          [
+            3.714769,
+            50.98241
+          ],
+          [
+            3.703022,
+            50.974011
+          ],
+          [
+            3.699339,
+            50.969121
+          ],
+          [
+            3.697248,
+            50.967742
+          ],
+          [
+            3.69257,
+            50.966049
+          ],
+          [
+            3.689484,
+            50.964106
+          ],
+          [
+            3.688289,
+            50.962475
+          ],
+          [
+            3.686597,
+            50.958713
+          ],
+          [
+            3.684407,
+            50.956519
+          ],
+          [
+            3.680624,
+            50.954951
+          ],
+          [
+            3.675646,
+            50.953822
+          ],
+          [
+            3.671764,
+            50.953697
+          ],
+          [
+            3.666189,
+            50.955139
+          ],
+          [
+            3.662804,
+            50.956205
+          ],
+          [
+            3.658822,
+            50.956268
+          ],
+          [
+            3.654342,
+            50.955453
+          ],
+          [
+            3.651157,
+            50.954073
+          ],
+          [
+            3.648668,
+            50.952066
+          ],
+          [
+            3.647673,
+            50.949871
+          ],
+          [
+            3.647673,
+            50.947801
+          ],
+          [
+            3.649166,
+            50.943725
+          ],
+          [
+            3.649763,
+            50.940965
+          ],
+          [
+            3.650062,
+            50.938518
+          ],
+          [
+            3.651356,
+            50.935758
+          ],
+          [
+            3.652849,
+            50.933625
+          ],
+          [
+            3.653646,
+            50.931617
+          ],
+          [
+            3.654044,
+            50.929358
+          ],
+          [
+            3.656035,
+            50.926786
+          ],
+          [
+            3.657344,
+            50.924903
+          ],
+          [
+            3.658937,
+            50.921703
+          ],
+          [
+            3.661127,
+            50.920071
+          ],
+          [
+            3.662421,
+            50.918816
+          ],
+          [
+            3.667697,
+            50.916808
+          ],
+          [
+            3.670783,
+            50.914925
+          ],
+          [
+            3.67596,
+            50.91367
+          ],
+          [
+            3.680639,
+            50.912414
+          ],
+          [
+            3.684223,
+            50.909778
+          ],
+          [
+            3.686015,
+            50.906514
+          ],
+          [
+            3.686811,
+            50.902936
+          ],
+          [
+            3.685517,
+            50.899545
+          ],
+          [
+            3.680042,
+            50.893266
+          ],
+          [
+            3.676358,
+            50.891257
+          ],
+          [
+            3.668792,
+            50.889687
+          ],
+          [
+            3.661227,
+            50.886484
+          ],
+          [
+            3.652765,
+            50.886359
+          ],
+          [
+            3.644701,
+            50.885103
+          ],
+          [
+            3.632457,
+            50.880204
+          ],
+          [
+            3.628574,
+            50.875807
+          ],
+          [
+            3.627479,
+            50.872415
+          ],
+          [
+            3.628574,
+            50.868017
+          ],
+          [
+            3.626782,
+            50.863619
+          ],
+          [
+            3.625787,
+            50.860477
+          ],
+          [
+            3.625389,
+            50.857147
+          ],
+          [
+            3.623895,
+            50.854319
+          ],
+          [
+            3.618022,
+            50.849479
+          ],
+          [
+            3.611949,
+            50.845142
+          ],
+          [
+            3.610456,
+            50.843885
+          ],
+          [
+            3.607967,
+            50.841434
+          ],
+          [
+            3.60289,
+            50.838856
+          ],
+          [
+            3.597415,
+            50.836593
+          ],
+          [
+            3.591343,
+            50.834581
+          ],
+          [
+            3.588953,
+            50.833387
+          ],
+          [
+            3.585967,
+            50.830683
+          ],
+          [
+            3.582582,
+            50.825841
+          ],
+          [
+            3.577505,
+            50.821942
+          ],
+          [
+            3.573324,
+            50.820055
+          ],
+          [
+            3.568347,
+            50.819489
+          ],
+          [
+            3.562473,
+            50.820433
+          ],
+          [
+            3.558392,
+            50.820433
+          ],
+          [
+            3.554609,
+            50.819741
+          ],
+          [
+            3.551125,
+            50.817917
+          ],
+          [
+            3.547541,
+            50.813892
+          ],
+          [
+            3.544355,
+            50.81213
+          ],
+          [
+            3.531115,
+            50.809048
+          ],
+          [
+            3.527103,
+            50.80766
+          ],
+          [
+            3.523074,
+            50.805113
+          ],
+          [
+            3.520483,
+            50.801657
+          ],
+          [
+            3.519044,
+            50.7982
+          ],
+          [
+            3.515877,
+            50.795653
+          ],
+          [
+            3.510408,
+            50.794197
+          ],
+          [
+            3.502924,
+            50.793834
+          ],
+          [
+            3.497455,
+            50.791832
+          ],
+          [
+            3.495378,
+            50.790521
+          ],
+          [
+            3.491933,
+            50.788275
+          ],
+          [
+            3.487627,
+            50.785008
+          ],
+          [
+            3.484936,
+            50.781333
+          ],
+          [
+            3.48289,
+            50.779018
+          ],
+          [
+            3.480199,
+            50.777725
+          ],
+          [
+            3.475569,
+            50.776295
+          ],
+          [
+            3.469971,
+            50.772551
+          ],
+          [
+            3.463727,
+            50.768466
+          ],
+          [
+            3.459098,
+            50.764721
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "a85dad92ac3aa1d07264aae0e958ff7b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "I teach a short introductory course on GIS for students of Environmental Engineering. The contents of the course are: ▪ Basic GIS theory ▪ Short introduction to cartography ▪ Basic ArcGIS and QGIS",
+        "end": "",
+        "org": "Metropolia University of Applied Sciences",
+        "start": "09/2015",
+        "title": "Lecturer on GIS",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          24.843343,
+          60.258157
+        ],
+        "type": "Point"
+      },
+      "id": "abeffc987bfd6948cf7680c6e134a13a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A 2-week intensive course on sustainability arranged by the Baltic University (a network of universities from the Baltic region).  The course was held on board of STS Fryderyk Chopin, a 50-meter and 50-crew sailing boat. The course started in Sczeczin, Poland and ended in Bergen, Norway. During the trip we also harboured in Helsingor (Denmark), Stavanger and Maloy (Norway). The crew consisted of participants from all over the Baltic Sea region and were from a varied background.   The course itself offered a wide perspective on sustainability issues in the countries of the Baltic Sea and more importantly, the prespective from professionals from different fields than mine.  At the end of the course i was invited for a Watch Leader training in summers of 2014 and 2015 for showing leadership and setting an example during the SAIL.",
+        "end": "08/2013",
+        "org": "Baltic University",
+        "start": "08/2013",
+        "title": "SAIL - Sustainability in International Learning 2013",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            14.561305,
+            53.422089
+          ],
+          [
+            14.565345,
+            53.424769
+          ],
+          [
+            14.56764,
+            53.428708
+          ],
+          [
+            14.5737,
+            53.432373
+          ],
+          [
+            14.583524,
+            53.437953
+          ],
+          [
+            14.584464,
+            53.444604
+          ],
+          [
+            14.591452,
+            53.454528
+          ],
+          [
+            14.600053,
+            53.461996
+          ],
+          [
+            14.605786,
+            53.471489
+          ],
+          [
+            14.609728,
+            53.475648
+          ],
+          [
+            14.614924,
+            53.48002
+          ],
+          [
+            14.623525,
+            53.495905
+          ],
+          [
+            14.629796,
+            53.507628
+          ],
+          [
+            14.626929,
+            53.51743
+          ],
+          [
+            14.633021,
+            53.526378
+          ],
+          [
+            14.627288,
+            53.540222
+          ],
+          [
+            14.603457,
+            53.554488
+          ],
+          [
+            14.59844,
+            53.56247
+          ],
+          [
+            14.595573,
+            53.578005
+          ],
+          [
+            14.595215,
+            53.585983
+          ],
+          [
+            14.583748,
+            53.616498
+          ],
+          [
+            14.524078,
+            53.668172
+          ],
+          [
+            14.341713,
+            53.806325
+          ],
+          [
+            14.284899,
+            53.848137
+          ],
+          [
+            14.278913,
+            53.864212
+          ],
+          [
+            14.275309,
+            53.873937
+          ],
+          [
+            14.266578,
+            53.883659
+          ],
+          [
+            14.255213,
+            53.892399
+          ],
+          [
+            14.25355,
+            53.898688
+          ],
+          [
+            14.257708,
+            53.903669
+          ],
+          [
+            14.271706,
+            53.910037
+          ],
+          [
+            14.280437,
+            53.916405
+          ],
+          [
+            14.281823,
+            53.923179
+          ],
+          [
+            14.276141,
+            53.929789
+          ],
+          [
+            14.27032,
+            53.938112
+          ],
+          [
+            14.069291,
+            54.298683
+          ],
+          [
+            13.526322,
+            54.911696
+          ],
+          [
+            12.711484,
+            55.349588
+          ],
+          [
+            12.863587,
+            55.632722
+          ],
+          [
+            12.645081,
+            55.908932
+          ],
+          [
+            12.620757,
+            56.03461
+          ],
+          [
+            12.615907,
+            56.034459
+          ],
+          [
+            12.622826,
+            56.035135
+          ],
+          [
+            12.648472,
+            56.042984
+          ],
+          [
+            11.998051,
+            56.51654
+          ],
+          [
+            11.074865,
+            57.866394
+          ],
+          [
+            10.428458,
+            57.969789
+          ],
+          [
+            7.024609,
+            57.75797
+          ],
+          [
+            5.5627,
+            58.260802
+          ],
+          [
+            5.344505,
+            58.940018
+          ],
+          [
+            5.568155,
+            59.046798
+          ],
+          [
+            5.645953,
+            59.021081
+          ],
+          [
+            5.716564,
+            58.983551
+          ],
+          [
+            5.726352,
+            58.975348
+          ],
+          [
+            5.729457,
+            58.97159
+          ],
+          [
+            5.729941,
+            58.971557
+          ],
+          [
+            5.729209,
+            58.972527
+          ],
+          [
+            5.724444,
+            58.978856
+          ],
+          [
+            5.717615,
+            58.9837
+          ],
+          [
+            5.694365,
+            58.999803
+          ],
+          [
+            5.644912,
+            59.025082
+          ],
+          [
+            5.438477,
+            59.125616
+          ],
+          [
+            5.383122,
+            59.123556
+          ],
+          [
+            5.169879,
+            59.116841
+          ],
+          [
+            5.114932,
+            59.151071
+          ],
+          [
+            5.117549,
+            59.281634
+          ],
+          [
+            4.712604,
+            59.918496
+          ],
+          [
+            4.224485,
+            60.756132
+          ],
+          [
+            4.31896,
+            61.944982
+          ],
+          [
+            4.885807,
+            62.074304
+          ],
+          [
+            5.116961,
+            62.060325
+          ],
+          [
+            5.16097,
+            62.014061
+          ],
+          [
+            5.1631,
+            61.988735
+          ],
+          [
+            5.151033,
+            61.978399
+          ],
+          [
+            5.150323,
+            61.959719
+          ],
+          [
+            5.138256,
+            61.945033
+          ],
+          [
+            5.126846,
+            61.938346
+          ],
+          [
+            5.116036,
+            61.935588
+          ],
+          [
+            5.121517,
+            61.931935
+          ],
+          [
+            5.12304,
+            61.928335
+          ],
+          [
+            5.119195,
+            61.926024
+          ],
+          [
+            5.091039,
+            61.919253
+          ],
+          [
+            5.044619,
+            61.923688
+          ],
+          [
+            5.019402,
+            61.930522
+          ],
+          [
+            4.904867,
+            61.908019
+          ],
+          [
+            4.725125,
+            61.831711
+          ],
+          [
+            4.492161,
+            61.475269
+          ],
+          [
+            4.600741,
+            60.926053
+          ],
+          [
+            4.763611,
+            60.783273
+          ],
+          [
+            4.888479,
+            60.623879
+          ],
+          [
+            4.925594,
+            60.59646
+          ],
+          [
+            4.98389,
+            60.585009
+          ],
+          [
+            4.991663,
+            60.574828
+          ],
+          [
+            4.982595,
+            60.560823
+          ],
+          [
+            5.000731,
+            60.548723
+          ],
+          [
+            5.110846,
+            60.526421
+          ],
+          [
+            5.239098,
+            60.488793
+          ],
+          [
+            5.262416,
+            60.428752
+          ],
+          [
+            5.305775,
+            60.401668
+          ],
+          [
+            5.313189,
+            60.400203
+          ],
+          [
+            5.316795,
+            60.397567
+          ],
+          [
+            5.316209,
+            60.396862
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "af3c0080ff4009fb318c7d4de769917e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A one week long conference on sustainability arranged by the Baltic University Programme (a network of universities from the Baltic region).  The conference was held on board of STS Fryderyk Chopin, a 50-meter and 50-crew brig. The course started in Stavanger, Norway and ended in Belfast, Northern Ireland via Lerwick in the Shetland Islands.   I was invited on board as a watch leader taking care of a multinational crew of varying ages and backgrounds. Major part of the watch leader duty was to ensure that the watch in the bow functions well during sailing maneuvers and alarms.",
+        "end": "06/2016",
+        "org": "Baltic University",
+        "start": "06/2016",
+        "title": "SAIL for Teachers 2016",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            5.743647,
+            58.853307
+          ],
+          [
+            5.749572,
+            58.858244
+          ],
+          [
+            5.755333,
+            58.874924
+          ],
+          [
+            5.757142,
+            58.904262
+          ],
+          [
+            5.767008,
+            58.936795
+          ],
+          [
+            5.774085,
+            58.965318
+          ],
+          [
+            5.757461,
+            58.974142
+          ],
+          [
+            5.746104,
+            58.974227
+          ],
+          [
+            5.733266,
+            58.976009
+          ],
+          [
+            5.727505,
+            58.978977
+          ],
+          [
+            5.72158,
+            58.983049
+          ],
+          [
+            5.716478,
+            58.986865
+          ],
+          [
+            5.701994,
+            58.99297
+          ],
+          [
+            5.675824,
+            59.007127
+          ],
+          [
+            5.648175,
+            59.021869
+          ],
+          [
+            5.6039,
+            59.03847
+          ],
+          [
+            5.565088,
+            59.050484
+          ],
+          [
+            5.508574,
+            59.038292
+          ],
+          [
+            5.395012,
+            58.983983
+          ],
+          [
+            5.327892,
+            58.948217
+          ],
+          [
+            5.173571,
+            58.491928
+          ],
+          [
+            4.273181,
+            57.528582
+          ],
+          [
+            5.810139,
+            56.498779
+          ],
+          [
+            6.519504,
+            55.23852
+          ],
+          [
+            4.65742,
+            53.464583
+          ],
+          [
+            3.989443,
+            52.498627
+          ],
+          [
+            3.46309,
+            51.989764
+          ],
+          [
+            3.330313,
+            51.610599
+          ],
+          [
+            3.442423,
+            51.477902
+          ],
+          [
+            3.556491,
+            51.439555
+          ],
+          [
+            3.577387,
+            51.434489
+          ],
+          [
+            3.663875,
+            51.440279
+          ],
+          [
+            3.710891,
+            51.415307
+          ],
+          [
+            3.776482,
+            51.389235
+          ],
+          [
+            3.826401,
+            51.374381
+          ],
+          [
+            3.849228,
+            51.365257
+          ],
+          [
+            3.860249,
+            51.363352
+          ],
+          [
+            3.89772,
+            51.381451
+          ],
+          [
+            3.916033,
+            51.410754
+          ],
+          [
+            3.934006,
+            51.441286
+          ],
+          [
+            3.946892,
+            51.448155
+          ],
+          [
+            3.980293,
+            51.445936
+          ],
+          [
+            4.015899,
+            51.431985
+          ],
+          [
+            4.036584,
+            51.416866
+          ],
+          [
+            4.058627,
+            51.406608
+          ],
+          [
+            4.078802,
+            51.395819
+          ],
+          [
+            4.092198,
+            51.384604
+          ],
+          [
+            4.099491,
+            51.375185
+          ],
+          [
+            4.109155,
+            51.369364
+          ],
+          [
+            4.149848,
+            51.37582
+          ],
+          [
+            4.180707,
+            51.396559
+          ],
+          [
+            4.195119,
+            51.398887
+          ],
+          [
+            4.211565,
+            51.392328
+          ],
+          [
+            4.22479,
+            51.37455
+          ],
+          [
+            4.237846,
+            51.356872
+          ],
+          [
+            4.275287,
+            51.333996
+          ],
+          [
+            4.280473,
+            51.304423
+          ],
+          [
+            4.318716,
+            51.291858
+          ],
+          [
+            4.323254,
+            51.280102
+          ],
+          [
+            4.303808,
+            51.263475
+          ],
+          [
+            4.304812,
+            51.259372
+          ],
+          [
+            4.308529,
+            51.256319
+          ],
+          [
+            4.335008,
+            51.249923
+          ],
+          [
+            4.353357,
+            51.241635
+          ],
+          [
+            4.363173,
+            51.240658
+          ],
+          [
+            4.393665,
+            51.238809
+          ],
+          [
+            4.39714,
+            51.238591
+          ],
+          [
+            4.400789,
+            51.240495
+          ],
+          [
+            4.405635,
+            51.242568
+          ],
+          [
+            4.406326,
+            51.242102
+          ],
+          [
+            4.406326,
+            51.241237
+          ],
+          [
+            4.406432,
+            51.23994
+          ],
+          [
+            4.407282,
+            51.233188
+          ],
+          [
+            4.40792,
+            51.232522
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "b2fb2cb8cc646b71e453a086a434f54a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A 4-day campaing in May 2012 to sample, analyze and determine the ecological status according to the Water Framework Directive.  Sampling and analysis included sediments, water quality and biology (indicator species).",
+        "end": "05/2012",
+        "org": "HZ University of Applied Sciences",
+        "start": "05/2012",
+        "title": "Determining the ecological status of Eastern Scheldt, Volkerak and Steenbergse Vliet",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              4.079189,
+              51.641954
+            ],
+            [
+              4.100092,
+              51.637135
+            ],
+            [
+              4.121591,
+              51.651959
+            ],
+            [
+              4.148467,
+              51.648995
+            ],
+            [
+              4.192662,
+              51.633428
+            ],
+            [
+              4.223718,
+              51.621194
+            ],
+            [
+              4.252384,
+              51.625643
+            ],
+            [
+              4.260148,
+              51.657147
+            ],
+            [
+              4.23387,
+              51.662704
+            ],
+            [
+              4.221926,
+              51.674927
+            ],
+            [
+              4.191467,
+              51.684185
+            ],
+            [
+              4.163398,
+              51.689368
+            ],
+            [
+              4.149064,
+              51.67789
+            ],
+            [
+              4.100689,
+              51.672334
+            ],
+            [
+              4.079189,
+              51.658999
+            ],
+            [
+              4.079189,
+              51.641954
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "b6caf2df98dfdb149b7444bad0caf1bb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Working at the dormitory at two locations. Main tasks were: ▪\tProviding assistance to the residents when needed  ▪\tTaking care of resident’s security ▪\tHotel manager/receptionist during school’s summer holidays  ▪\t3 months working as teacher’s assistant in the class room  ▪\t3 shift job from Nov 2005 to Dec 2007  ▪\tFull time night job since Jan 2008. ",
+        "end": "07/2016",
+        "org": "Invalidisäätiö / Keskuspuisto Vocational School ",
+        "start": "11/2005",
+        "title": "Nightwatch",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          24.829225,
+          60.221532
+        ],
+        "type": "Point"
+      },
+      "id": "c57ad6b9e2b81033b3f9abe721a03d3b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Bachelor's Degree studies. 2009-2014. Finished with 276 credits with GPA of 4,1.   Studies included: ▪\tEnvironmental and atmospheric pollution ▪\tEnvironmental chemistry ▪\tWater and waste treatment ▪\tRenewable energy (incl. biofuels) ▪\tPower plant operation and cycles  Studies included one year exchange at HZ University of Applied Sciences (Netherlands) in Water Management. Thesis title was \"Effects of Mining and Hydropower on Metals in Surface Waters : Case: Nam Ngum\".  At graduation I received Vantaan Energia Award for excellent success in studies.",
+        "end": "06/2014",
+        "org": "Metropolia University of Applied Sciences",
+        "start": "09/2009",
+        "title": "Bachelor of Environmental Engineering",
+        "type": "edu"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.843321,
+              60.259188
+            ],
+            [
+              24.842622,
+              60.258283
+            ],
+            [
+              24.842749,
+              60.257989
+            ],
+            [
+              24.845845,
+              60.257137
+            ],
+            [
+              24.845739,
+              60.258988
+            ],
+            [
+              24.843321,
+              60.259188
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "d0420b39cf606c8ee50ea9b59344d7e3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Studies included: ▪\tAccounting ▪\tAdministration ▪\tCustomer service ▪\tMinor in sales and marketing",
+        "end": "06/2005",
+        "org": "Helsinki Business College",
+        "start": "08/2000",
+        "title": "Vocational Education in Business and Administration",
+        "type": "edu"
+      },
+      "geometry": {
+        "coordinates": [
+          24.935423,
+          60.201671
+        ],
+        "type": "Point"
+      },
+      "id": "d4289c0560b5cae8f5633c29736a3ae4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Two semester exchange studies in 2011-2012.  ▪\t(Aquatic) Ecology ▪\tDredging ▪\tWater system analysis ▪\tRiver basin management ▪\tIWRM ▪\tAquaculture ▪\tEcological engineering  Exchange included also a one-week project work determining the state of River Guadalquivir in Andalucia, Spain.",
+        "end": "06/2012",
+        "org": "HZ University of Applied Sciences",
+        "start": "09/2011",
+        "title": "Erasmus exchange / International Water Management",
+        "type": "edu"
+      },
+      "geometry": {
+        "coordinates": [
+          3.589621,
+          51.449825
+        ],
+        "type": "Point"
+      },
+      "id": "e2b13ce40aa33a93d5cecc0f7c4c20b8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Bachelor's Degree studies. 2009-2014. Finished with 276 credits with GPA of 4,1.   Studies included: ▪\tEnvironmental and atmospheric pollution ▪\tEnvironmental chemistry ▪\tWater and waste treatment ▪\tRenewable energy (incl. biofuels) ▪\tPower plant operation and cycles  Studies included one year exchange at HZ University of Applied Sciences (Netherlands) in Water Management. Thesis title was \"Effects of Mining and Hydropower on Metals in Surface Waters : Case: Nam Ngum\".  At graduation I received Vantaan Energia Award for excellent success in studies.",
+        "end": "06/2014",
+        "org": "Metropolia University of Applied Sciences",
+        "start": "09/2009",
+        "title": "Bachelor of Environmental Engineering",
+        "type": "edu"
+      },
+      "geometry": {
+        "coordinates": [
+          24.844847,
+          60.258603
+        ],
+        "type": "Point"
+      },
+      "id": "e4fe25d7a15191c3d40ca54b8ca38618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "A summer job to create product information web pages for internal use. TeliaSonera is one of the largest biggest telecommunications service providers in the Nordic countries.",
+        "end": "07/2003",
+        "org": "Sonera Oyj ",
+        "start": "06/2003",
+        "title": "Summer Intern",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.948723,
+              60.193808
+            ],
+            [
+              24.949505,
+              60.194255
+            ],
+            [
+              24.952611,
+              60.192924
+            ],
+            [
+              24.951876,
+              60.192488
+            ],
+            [
+              24.948723,
+              60.193808
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e52400d62e3c1ce2b9cb89688adb411c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Geoinformatics is a field that combines geography, cartography and computing.   In addition to studying these fields, I have been taking courses in water resources management (and related computational methods), information visualization and Asian studies. My Master's thesis titled \"An exploration of water poverty in Lao People's Democratic Republic' received the ProGIS Thesis Award for a meritorious thesis in 2016.",
+        "end": "11/2016",
+        "org": "Aalto University",
+        "start": "09/2014",
+        "title": "Master's in Geoinformatics",
+        "type": "edu"
+      },
+      "geometry": {
+        "coordinates": [
+          24.80921,
+          60.188755
+        ],
+        "type": "Point"
+      },
+      "id": "edfb0322d30bec219f7c3aea72c702a9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Working at the dormitory at two locations. Main tasks were: ▪\tProviding assistance to the residents when needed  ▪\tTaking care of resident’s security ▪\tHotel manager/receptionist during school’s summer holidays  ▪\t3 months working as teacher’s assistant in the class room  ▪\t3 shift job from Nov 2005 to Dec 2007  ▪\tFull time night job since Jan 2008. ",
+        "end": "07/2016",
+        "org": "Invalidisäätiö / Keskuspuisto Vocational School ",
+        "start": "11/2005",
+        "title": "Nightwatch",
+        "type": "work"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              24.906278,
+              60.202174
+            ],
+            [
+              24.907885,
+              60.20133
+            ],
+            [
+              24.908963,
+              60.201136
+            ],
+            [
+              24.909056,
+              60.201239
+            ],
+            [
+              24.909167,
+              60.202425
+            ],
+            [
+              24.908434,
+              60.202687
+            ],
+            [
+              24.906851,
+              60.202732
+            ],
+            [
+              24.90644,
+              60.202677
+            ],
+            [
+              24.906278,
+              60.202174
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "f02f6cd2e762494a03164c3b5512363d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "GogoRideshare (ow Klokan) is a web service/application which aims to connect car drivers with hitchhikers and commuters. I have been involved in the development by translating the service into Finnish and occasionally doing testing. The service continuously being developed, but it is available at www.GogoRideshare.com (www.klokan.org).",
+        "end": "06/2015",
+        "org": "GogoRideshare / Klokan",
+        "start": "06/2013",
+        "title": "GogoRideshare / Klokan Translations",
+        "type": "other"
+      },
+      "geometry": {
+        "coordinates": [
+          3.57299,
+          51.442762
+        ],
+        "type": "Point"
+      },
+      "id": "f3571b2f47fc7809a9996bf2747e32fd"
+    }
+  ],
+  "type": "FeatureCollection"
+}
