@@ -6,7 +6,8 @@
   <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
   <script src='data2.geojson'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <style>
     html{
       height: 100%;
@@ -238,9 +239,10 @@ map.on('load', function() {
 		id: 'markers',
 		type: 'symbol',
 		source: 'data',
+		filter: ["!has", "point_count"],
 		layout: {
 		  'visibility': 'visible',
-		  'symbol-spacing': 100000,
+		  'symbol-spacing': 10,
 		  'icon-allow-overlap': true,
 		  'icon-image': "marker-15"  /*{
 					'property': 'type',
@@ -267,6 +269,61 @@ map.on('load', function() {
 	  });
 	  
 	  
+	  /*
+	   map.addLayer({
+        "id": "unclustered-markers",
+        "type": "symbol",
+        "source": "data",
+        "filter": ["!has", "point_count"],
+        "layout": {
+			'visibility': 'visible',
+		    'symbol-spacing': 10,
+		    'icon-allow-overlap': true,
+            "icon-image": "marker-15"
+        }
+    });
+
+    // Display the earthquake data in three layers, each filtered to a range of
+    // count values. Each range gets a different fill color.
+    var layers = [
+        [6, '#f28cb1'],
+        [3, '#f1f075'],
+        [0, '#51bbd6']
+    ];
+
+    layers.forEach(function (layer, i) {
+        map.addLayer({
+            "id": "cluster-" + i,
+            "type": "circle",
+            "source": "data",
+            "paint": {
+                "circle-color": layer[1],
+                "circle-radius": 18
+            },
+            "filter": i === 0 ?
+                [">=", "point_count", layer[0]] :
+                ["all",
+                    [">=", "point_count", layer[0]],
+                    ["<", "point_count", layers[i - 1][0]]]
+        });
+    });
+
+    // Add a layer for the clusters' count labels
+    map.addLayer({
+        "id": "cluster-count",
+        "type": "symbol",
+        "source": "data",
+        "layout": {
+            "text-field": "{point_count}",
+            "text-font": [
+                "DIN Offc Pro Medium",
+                "Arial Unicode MS Bold"
+            ],
+            "text-size": 12
+        }
+    });
+	  
+	  */
 	  
 
  
@@ -274,7 +331,7 @@ map.on('load', function() {
  
 
 	//CREATE MARKERS FOR CLUSTERING
-	
+	/*
 	// get GeoJSON from the map layers
 	//var pointFeatures = map.queryRenderedFeatures({ layers: ['edu', 'work','other'] });
 	//var lineFeatures = map.queryRenderedFeatures({filter: ["==","type","edu"]});
@@ -326,7 +383,7 @@ map.on('load', function() {
 			"text-anchor": "top"
 		}
 	});
-			
+			*/
 	// ADD features from 'points' layer to unclustered markers
 
   
