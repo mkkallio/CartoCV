@@ -5,7 +5,7 @@
   <title>CartoCV-Alpha</title>
   <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
-  <script src='data2.geojson'></script>
+  <script src='data.geojson'></script>
   <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
   <script src="js/leaflet.awesome-markers.min.js"></script>
   <script src="leaflet.markercluster-src.js"></script>
@@ -69,7 +69,7 @@ var map=new L.Map('map').setView([43.326139, 31.972922], 3);
 	}).addTo(map);
 
 	
-// DEFINE ICONS FOR POINTS
+// DEFINE ICONS FOR POINTS AND STYLES FOR LINES AND POLYGONS
 var eduMarker = L.AwesomeMarkers.icon({
 		icon: 'graduation-cap',
 		prefix: 'fa',
@@ -77,10 +77,10 @@ var eduMarker = L.AwesomeMarkers.icon({
 	});
 	
 var workMarker = L.AwesomeMarkers.icon({
-	icon: 'cogs',
-	prefix: 'fa',
-	markerColor: 'blue'
-});
+		icon: 'cogs',
+		prefix: 'fa',
+		markerColor: 'blue'
+	});
 
 var otherMarker = L.AwesomeMarkers.icon({
 		icon: 'check-square-o',
@@ -89,6 +89,13 @@ var otherMarker = L.AwesomeMarkers.icon({
 	});
 
 	
+var lineArea_style = function(feature) {
+		switch (feature.properties.class) {
+			case 'exp': return {color: "#00BFFF", fillOpacity: 0.2, weight: 4};
+			case 'edu':   return {color: "#4B0082", fillOpacity: 0.2, weight: 4};
+			case 'project':   return {color: "darkred", fillOpacity: 0.2, weight: 4};
+		}
+	};
 	
 	
 console.log(data);
@@ -102,9 +109,7 @@ var onEachFeature = function (feature, layer) {
 // ADD MARKERS ON MAP
 var eduMarkers = L.geoJson(data, {
 		filter: function(feature, layer) {
-
 			return (feature.properties.type == "edu" && feature.geometry.type == "Point");
-
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
@@ -139,11 +144,45 @@ var otherMarkers = L.geoJson(data, {
 		onEachFeature: onEachFeature
 	}).addTo(markerCluster);
   
-  
+
+// ADD LINES AND POLYGONS TO MAP  
+var eduFeatures = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.type == "edu" && feature.geometry.type !== "Point");
+		},
+		style: {
+			color: "#4B0082", fillOpacity: 0.2, weight: 4
+		},
+		onEachFeature: onEachFeature
+	});
+	
+var workFeatures = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.type == "work" && feature.geometry.type !== "Point");
+		},
+		style: {
+			color: "#00BFFF", fillOpacity: 0.2, weight: 4
+		},
+		onEachFeature: onEachFeature
+	});
+	
+var otherFeatures = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return (feature.properties.type == "other" && feature.geometry.type !== "Point");
+		},
+		style: {
+			color: "darkred", fillOpacity: 0.2, weight: 4
+		},
+		onEachFeature: onEachFeature
+	});
 
 
-  // add venueMarkers layer to the cluster group and add it to map
-  markerCluster.addTo(map);
+
+// ADD LAYERS TO MAP
+eduFeatures.addTo(map);
+workFeatures.addTo(map);
+otherFeatures.addTo(map);
+markerCluster.addTo(map);
 
 
 
