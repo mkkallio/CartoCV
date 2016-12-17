@@ -193,6 +193,9 @@ workFeatures.addTo(map);
 otherFeatures.addTo(map);
 markerCluster.addTo(map);
 
+// ABOVE IS CODE FOR THE MAO
+//=================================//
+// BELOW IS CODE FOR THE SIDEBAR
 
 // DEFINE FUNCTIONS FOR SIDEBAR
 var emptyContent=function(){
@@ -200,6 +203,38 @@ var emptyContent=function(){
   $jobContent.empty();
   $otherContent.empty();
 };
+
+// EXTRACT STARTING AND ENDING MONTH AND YEAR FROM THE GEOJSON DATA
+data.features.forEach(function(feature) {
+	startMonth = feature.properties.start.slice(0, 2);
+	startYear = feature.properties.start.slice(3, 7);
+	endMonth = feature.properties.end.slice(0, 2);
+	endYear = feature.properties.end.slice(3, 7);
+	
+	feature.properties.startMonth = startMonth;
+	feature.properties.startYear = startYear;
+	feature.properties.endMonth = endMonth;
+	feature.properties.endYear = endYear;
+});
+
+// SORTING GEOJSON IN DESCENDING ORDER. SOURCE: http://gis.stackexchange.com/questions/68369/how-do-i-sort-a-geojson-feature-collection-alphabetically-by-a-property-value
+function propSort(props) {
+  if (!props instanceof Array) props = props.split(",");
+  return function sort(a, b) {
+    var p;
+    a = a.properties;
+    b = b.properties;
+    for (var i = 0; i < props.length; i++) {
+      p = props[i];
+      if (typeof a[p] === "undefined") return -1;
+      if (a[p] < b[p]) return 1;
+      if (a[p] > b[p]) return -1;
+    }
+    return 0;
+  };
+}
+
+data.features.sort(propSort(["startYear", "startMonth"]));
 
 $Education.on('click',function(){
 		//removeLayers();
@@ -211,6 +246,9 @@ $Education.on('click',function(){
 			$eduContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
 		  }
 		})
+		
+		$eduContent.hide().slideDown('slow')
+		
 });
 
 $Job.on('click',function(){
