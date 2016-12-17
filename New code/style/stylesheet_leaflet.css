@@ -87,7 +87,19 @@
     background-image: -ms-linear-gradient(top, #dbdbdb 0%, #dbdbdb 100%);
     color: #000000;
    }
-   
+
   .mapboxgl-popup-content {
    max-width: 300px
+  }
+
+  #eduContent{
+    max-height: 75vh;
+    overflow: auto;
+  }
+  #jobContent{
+    max-height: 75vh;
+    overflow: auto;
+  }#otherContent{
+    max-height: 75vh;
+    overflow: auto;
   }
