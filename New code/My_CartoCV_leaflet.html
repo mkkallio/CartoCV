@@ -62,6 +62,18 @@ var $eduContent=$('#eduContent')
 var $jobContent=$('#jobContent')
 var $otherContent=$('#otherContent')
 
+// COLOURS
+var bgColor = "black";
+var eduColor = "#8dd3c7";
+var jobColor = "#ffffb3";
+var otherColor = "#fccde5";
+
+// ASSIGN COLOURS TO SIDEBAR TABS
+$('#sidebar').css('background', bgColor);
+$Education.css('background', eduColor);
+$Job.css('background', jobColor);
+$Other.css('background', otherColor);
+
 // DEFINE USER ACCESS TOKEN, USERNAME AND DATASET ID
 //mapboxgl.accessToken = 'pk.eyJ1IjoibWthbGxpbyIsImEiOiI1bGRRTlJnIn0.L_gIG_xYamdIn4kjiP3HBQ';
 
@@ -159,7 +171,7 @@ var eduFeatures = L.geoJson(data, {
 			return (feature.properties.type == "edu" && feature.geometry.type !== "Point");
 		},
 		style: {
-			color: "#4B0082", fillOpacity: 0.2, weight: 4
+			color: eduColor, fillOpacity: 0.2, weight: 4
 		},
 		onEachFeature: onEachFeature
 	});
@@ -169,7 +181,7 @@ var workFeatures = L.geoJson(data, {
 			return (feature.properties.type == "work" && feature.geometry.type !== "Point");
 		},
 		style: {
-			color: "#00BFFF", fillOpacity: 0.2, weight: 4
+			color: jobColor, fillOpacity: 0.2, weight: 4
 		},
 		onEachFeature: onEachFeature
 	});
@@ -179,7 +191,7 @@ var otherFeatures = L.geoJson(data, {
 			return (feature.properties.type == "other" && feature.geometry.type !== "Point");
 		},
 		style: {
-			color: "darkred", fillOpacity: 0.2, weight: 4
+			color: otherColor, fillOpacity: 0.2, weight: 4
 		},
 		onEachFeature: onEachFeature
 	});
@@ -243,7 +255,7 @@ $Education.on('click',function(){
 		data.features.forEach(function(feature) {
 
 		  if (feature.properties.type=='edu' && feature.geometry.type == "Point") {
-			$eduContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+			$eduContent.append("<font color=" + eduColor + "><b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</font></b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
 		  }
 		})
 		
@@ -257,9 +269,11 @@ $Job.on('click',function(){
 		data.features.forEach(function(feature) {
 
 		  if (feature.properties.type=='work' && feature.geometry.type == "Point") {
-			$jobContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+			$jobContent.append("<font color=" + jobColor + "><b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</font></b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
 		  }
 		})
+		
+		$jobContent.hide().slideDown('slow')
 });
 
 $Other.on('click',function(){
@@ -268,9 +282,11 @@ $Other.on('click',function(){
 		data.features.forEach(function(feature) {
 
 		  if (feature.properties.type=='other' && feature.geometry.type == "Point") {
-			$otherContent.append("<b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
+			$otherContent.append("<font color=" + otherColor + "><b><br>" + feature.properties.title + "<br>" + feature.properties.org + "</font></b><br> Started: " + feature.properties.start + "<br> Ended: " + feature.properties.end + "<br><br><b> Description:</b> " + feature.properties.description+'<br><br>')
 		  } 
 		})
+		
+		$otherContent.hide().slideDown('fast')
 });
 
 
