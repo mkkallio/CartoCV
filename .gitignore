@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+New code/style/MarkerCluster.Default.css
+*.css
+New code/js/leaflet.markercluster-src.js
